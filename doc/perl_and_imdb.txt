@@ -1,0 +1,2 @@
+keeping users, passwords, hosts, ports and database names out of your code:
+	http://www.perlmonks.org/?node_id=519337
