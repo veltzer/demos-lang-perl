@@ -1,3 +1,4 @@
+.PHONY: all
 all:
 	$(info nothing to do for all)
 
