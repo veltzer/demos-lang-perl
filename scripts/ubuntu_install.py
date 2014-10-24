@@ -12,6 +12,9 @@ packs=[
 	'libnet-github-perl',
 	'libconfig-inifiles-perl',
 	'libfile-homedir-perl',
+
+	# my own
+	'templar',
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
