@@ -1,7 +1,8 @@
 include /usr/share/templar/Makefile
 
+ALL:=$(TEMPLAR_ALL)
+ALL_DEP:=$(TEMPLAR_ALL_DEP)
+
 .DEFAULT_GOAL=all
 .PHONY: all
-all:
-	$(info nothing to do for all)
-
+all: $(ALL)
