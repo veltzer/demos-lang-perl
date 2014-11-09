@@ -1,5 +1,2 @@
 # python cache in any folder (this is for python3)
 __pycache__
-
-# template config file
-.attr.config
