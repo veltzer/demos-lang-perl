@@ -26,7 +26,7 @@ for(my($i)=1;$i<@ARGV;$i++) {
 			if($print_filename) {
 				print $filename.': ';
 			}
-			print $line; 
+			print $line;
 		}
 	}
 	close(FILE) || die('unable to close file [$filename]: $!');
