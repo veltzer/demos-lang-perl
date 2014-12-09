@@ -1,0 +1,18 @@
+# Exercise 2.2
+
+# Sort two strings
+
+# Get the first string
+print("Enter first string: ");
+$string1 = <STDIN>;
+
+# Get the second string
+print("Enter second string: ");
+$string2 = <STDIN>;
+
+# Test and print the strings in sorted order
+# Note: newline character left on the end of the strings
+
+print(($string1 ge $string2) ? $string2 : $string1);
+print(($string1 lt $string2) ? $string2 : $string1);
+

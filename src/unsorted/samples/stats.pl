@@ -1,0 +1,28 @@
+#!/usr/bin/perl -w
+
+# print statistics about an array in a function
+
+use strict;
+use diagnostics;
+
+sub stats {
+	my($sum)=0;
+	my($smallest)=$_[0];
+	my($biggest)=$_[0];
+	my($number);
+	foreach $number (@_) {
+		$sum+=$number;
+		if($number<$smallest) {
+			$smallest=$number;
+		}
+		if($number>$biggest) {
+			$biggest=$number;
+		}
+	}
+	return($biggest,$smallest,$sum/@_);
+}
+
+my($biggest,$smallest,$average)=stats(5,6,7,8);
+print "biggest is $biggest\n";
+print "smallest is $smallest\n";
+print "average is $average\n";

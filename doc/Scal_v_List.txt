@@ -1,0 +1,57 @@
+1)	$x = expr;
+
+2)	($x, $y) = expr;
+
+3)	($x) = expr;
+
+4)	@ary = expr;
+
+5)	$ary[$i] = expr;
+
+6)	@ary[$i, $j] = expr;
+
+7)	@ary[$i] = expr;
+
+8)	print expr;
+
+9)	mysub($x, expr, $y);
+
+10)	while (expr) { . . . }
+
+11)	foreach (expr) { . . . }
+
+12)	for (;expr;) { . . . }
+
+13)	%tbl = expr;
+
+14)	$tbl{foo} = expr;
+
+Below are the answers:
+
+1)	$x = expr;			scalar
+
+2)	($x, $y) = expr;		list
+
+3)	($x) = expr;			list
+
+4)	@ary = expr;			list
+
+5)	$ary[$i] = expr;		scalar
+
+6)	@ary[$i, $j] = expr;		list
+
+7)	@ary[$i] = expr;		list
+
+8)	print expr;			list
+
+9)	mysub($x, expr, $y);		list
+
+10)	while (expr) { . . . }		scalar
+
+11)	foreach (expr) { . . . }	list
+
+12)	for (;expr;) { . . . }		scalar
+
+13)	%tbl = expr;			list
+
+14)	$tbl{foo} = expr;		scalar
