@@ -1,3 +1,5 @@
 #!/usr/bin/perl -w
 
-print 'Hello, World!'."\n";
+# This is a most basic "Hello, World!" example in perl.
+
+print 'Hello, World!'."\n"
