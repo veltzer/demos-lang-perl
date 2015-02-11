@@ -15,6 +15,6 @@ print "Enter password> ";
 $password = <STDIN>;
 chomp $password;
 
-print "Login: $login\n";
-print "Name: $name\n";
-print "Password: $password\n";
+print "Login: [$login]\n";
+print "Name: [$name]\n";
+print "Password: [$password]\n";

@@ -7,8 +7,8 @@ use diagnostics;
 
 my(@l)=("gabriel","mark","yaron","gilad","hila","yossi","raffi");
 my(@r)=sort {
-	print "a is $a\n";
-	print "b is $b\n";
+	#print "a is $a\n";
+	#print "b is $b\n";
 	if(substr($a,0,1) eq "g")
 		{ return 1; }
 	else {

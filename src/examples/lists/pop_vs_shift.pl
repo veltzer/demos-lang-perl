@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This script aims to test whether there is a significant
-# difference in performance in perl between pop and shift
-# (meaning whether perl implements the array as a cyclic
-# entity or not).
+=head
+
+This script aims to test whether there is a significant
+difference in performance in perl between pop and shift
+(meaning whether perl implements the array as a cyclic
+entity or not).
+
+=cut
 
 use strict;
 use diagnostics;

@@ -1,7 +1,5 @@
 #!/usr/bin/perl -w
 
-# demo use of sort with a "g" discrimation function 
-
 use strict;
 use diagnostics;
 
@@ -14,5 +12,5 @@ sub factorial {
 	}
 }
 
-my($x)=factorial(10);
-print "x is $x\n";
+my($result)=factorial(10);
+print "factorial(10) is $result\n";
