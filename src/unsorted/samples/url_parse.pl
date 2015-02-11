@@ -5,8 +5,7 @@
 use strict;
 use diagnostics;
 
-#my($url_to_parse)="http://www.microsoft.com:8080/unregister/force.asp?please=yes";
-my($url_to_parse)="www.microsoft.com:8080/unregister/force.asp?please=yes";
+my($url_to_parse)="http://www.microsoft.com:8080/unregister/force.asp?please=yes";
 
 my($proto,$host,$port,$path,$arguments)=(
 	$url_to_parse=~m/^

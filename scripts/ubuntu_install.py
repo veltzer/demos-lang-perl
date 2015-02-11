@@ -12,6 +12,7 @@ packs=[
 	'libnet-github-perl',
 	'libconfig-inifiles-perl',
 	'libfile-homedir-perl',
+	'perl-tk',
 
 	# my own
 	'templar',
