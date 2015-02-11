@@ -10,8 +10,7 @@ die("Can't open directory $dir\n") unless opendir(DIR, $ARGV[0]);
 
 # Read the list of files
 while ($file = readdir(DIR)) {
-  print("$file\n") unless (-d $file || $file !~ /^\./);
+	print("$file\n") unless (-d $file || $file !~ /^\./);
 }
 
 closedir(DIR);
-

@@ -4,7 +4,6 @@
 
 $line = <STDIN>;
 while ($line ne "") {
-  print($line);
-  $line = <STDIN>;
+	print($line);
+	$line = <STDIN>;
 }
-

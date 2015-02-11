@@ -12,9 +12,8 @@ $mask = 1 << 15;
 
 # Loop through the bits from left to right
 while ($mask > 0) {
-  print((($mask & $num) > 0) ? 1 : 0);
-  $mask = $mask >> 1;
+	print((($mask & $num) > 0) ? 1 : 0);
+	$mask = $mask >> 1;
 }
 
 print("\n");
-

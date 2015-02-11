@@ -9,14 +9,13 @@ chomp($num);
 # Check to make sure it is an octal number
 $test = $num;
 while ($test ne "") {
-  $chr = chop($test);
-  die("Not octal number\n") if ($chr > 7);
+	$chr = chop($test);
+	die("Not octal number\n") if ($chr > 7);
 }
 
 $i = 0;
 while ($num ne "") {
-  $dec += chop($num) * (8**$i++);
+	$dec += chop($num) * (8**$i++);
 }
 
 print("$dec\n");
-

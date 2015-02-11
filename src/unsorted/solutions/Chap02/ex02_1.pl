@@ -13,13 +13,11 @@ $type = <STDIN>;
 chomp($type);
 
 if ($type eq "F") {
-  $T = 9 * $temp / 5 + 32;                                                                                                            # Test for Fahrenheit
+	$T = 9 * $temp / 5 + 32; # Test for Fahrenheit
 }
 else {
-
-  $T = 5 * ($temp - 32) / 9;                                                                                                            # Convert to Fahrenheit
-                                                                                                            # Convert to Celsius
+	$T = 5 * ($temp - 32) / 9; # Convert to Fahrenheit
+	# Convert to Celsius
 }
 
-print("$T degrees $type\n");                                                                                                                # Print out temperature
-
+print("$T degrees $type\n"); # Print out temperature

@@ -12,10 +12,9 @@ print("Swapping...\n\n");
 print("\$x = $x\n\$y = $y\n\n");
 
 sub swap {
-  my($refx, $refy) = @_;
-  my $temp;
-
-  $temp = ${$refx};
-  ${$refx} = ${$refy};
-  ${$refy} = $temp;
+	my($refx, $refy) = @_;
+	my $temp;
+	$temp = ${$refx};
+	${$refx} = ${$refy};
+	${$refy} = $temp;
 }

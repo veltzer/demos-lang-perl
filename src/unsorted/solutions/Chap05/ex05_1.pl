@@ -7,22 +7,20 @@
 
 # Check for options
 if (@ARGV == 0) {
-  print(@file);
+	print(@file);
 }
 elsif ($ARGV[0] eq "-l") {
-  print("found -l\n");
-  foreach $line (@file) {
-    print("\L$line\E");
-  }
+	print("found -l\n");
+	foreach $line (@file) {
+		print("\L$line\E");
+	}
 }
 elsif ($ARGV[0] eq "-u") {
-  print("found -u\n");
-    foreach $line (@file) {
-    print("\U$line\E");
-  }
+	print("found -u\n");
+	foreach $line (@file) {
+		print("\U$line\E");
+	}
 }
 else {
-  die("Unknown option: $ARGV[0]\n");
+	die("Unknown option: $ARGV[0]\n");
 }
-
-

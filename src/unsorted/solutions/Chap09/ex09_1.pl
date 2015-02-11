@@ -11,18 +11,17 @@ print("@ARGV\n");
 print("max = $max\nmin = $min\nave = $ave\n");
 
 sub listproc {
-  local ($mx, $mn, $av, $count);
-  $mx = $mn = $_[0];
-  foreach $item (@_) {
-    if ($item > $mx) {
-      $mx = $item;
-    }
-    if ($item < $mn) {
-      $mn = $item;
-    }
-    $av += $item;
-    $count++;
-  }
-  return ($mx, $mn, $av/$count);
+	local ($mx, $mn, $av, $count);
+	$mx = $mn = $_[0];
+	foreach $item (@_) {
+		if ($item > $mx) {
+			$mx = $item;
+		}
+		if ($item < $mn) {
+			$mn = $item;
+		}
+		$av += $item;
+		$count++;
+	}
+	return ($mx, $mn, $av/$count);
 }
-

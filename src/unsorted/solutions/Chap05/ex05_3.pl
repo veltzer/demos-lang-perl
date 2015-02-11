@@ -11,10 +11,8 @@ $word1 = $words[0];
 print("$word1\n");
 $i = 1;
 while ($i < @words) {
-  if ($words[$i] ne $words[$i - 1]) {
-    print("$words[$i]\n");
-  }
-  $i++;
+	if ($words[$i] ne $words[$i - 1]) {
+		print("$words[$i]\n");
+	}
+	$i++;
 }
-
-

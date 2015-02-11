@@ -7,14 +7,12 @@ print("$ARGV[0]\n");
 &revstr($ARGV[0]);
 
 sub revstr {
-  local ($str) = ($_[0]);
-  if ($str eq "") {
-    print("\n");
-    return;
-  }
-  else {
-    print(chop($str));
-    &revstr($str);
-  }
+	local ($str) = ($_[0]);
+	if ($str eq "") {
+		print("\n");
+		return;
+	} else {
+		print(chop($str));
+		&revstr($str);
+	}
 }
-

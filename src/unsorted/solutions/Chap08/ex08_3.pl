@@ -9,10 +9,9 @@ $string =~ tr/0-9//cd;
 @nums = split(//, $string);
 
 foreach $num (@nums) {
-  $count[$num]++;
+	$count[$num]++;
 }
 
 for ($num = 0; $num <= 9; $num++) {
-  print("$num: $count[$num]\n");
+	print("$num: $count[$num]\n");
 }
-

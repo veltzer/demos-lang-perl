@@ -7,13 +7,13 @@
 package upper;
 
 sub printstr {
-  return sprintf("%s", "\U$_[0]\E");
+	return sprintf("%s", "\U$_[0]\E");
 }
 
 package lower;
 
 sub printstr {
-  return sprintf("%s", "\L$_[0]\E");
+	return sprintf("%s", "\L$_[0]\E");
 }
 
 package main;

@@ -3,10 +3,10 @@
 use IO::Socket::INET;
 
 $server = IO::Socket::INET->new(LocalPort => "80",
-                                Type      => SOCK_STREAM,
-                                Reuse     => 1,
-                                Listen    => 10 )   # or SOMAXCONN
-    || die "Couldn't be a tcp server on port 80: $!\n";
+	Type => SOCK_STREAM,
+	Reuse => 1,
+	Listen => 10 ) # or SOMAXCONN
+	|| die "Couldn't be a tcp server on port 80: $!\n";
 
 print "WAIT\n";
 while ($client = $server->accept()) {

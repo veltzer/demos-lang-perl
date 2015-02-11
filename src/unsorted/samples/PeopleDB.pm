@@ -11,10 +11,10 @@ sub load_db {
 		next if (/^\s*$/);
 		my ($ID, $name, $age, $spouseID, $kidsIDs) = split ":";
 		$peopleDB{$ID} = {
-			NAME   => $name,
-			AGE    => $age,
+			NAME => $name,
+			AGE => $age,
 			SPOUSE => $spouseID,
-			KIDS   => $kidsIDs
+			KIDS => $kidsIDs
 			};
 	}
 

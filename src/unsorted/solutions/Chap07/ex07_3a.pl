@@ -10,12 +10,10 @@ open(INFILE, "$ARGV[1]") || die ("Unable to open $ARGV[1]: ");
 
 # Seek to the beginning of the record
 seek(INFILE, 10*($ARGV[0] - 1), 0) ||
-  die("Unable to seek to record $ARGV[0]\n");
+	die("Unable to seek to record $ARGV[0]\n");
 
 # Read the record
 read(INFILE, $record, 10);
 
 # Print the record
 print ("$record\n");
-
-

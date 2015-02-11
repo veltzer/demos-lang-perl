@@ -10,12 +10,11 @@ chomp(@input);
 
 # Count each word
 foreach $word (@words) {
-  $count{$word}++;
+	$count{$word}++;
 }
 
 # Print the list in sorted order
 print "\n";
 foreach $word (sort(keys(%count))) {
-  print("$word\t\t$count{$word}\n");
+	print("$word\t\t$count{$word}\n");
 }
-

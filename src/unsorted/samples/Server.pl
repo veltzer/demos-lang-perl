@@ -4,9 +4,9 @@ use IO::Socket;
 
 $sock = new IO::Socket::INET (	LocalHost => "localhost",
 				LocalPort => 1200,
-				Proto     => 'tcp',
-				Listen    => 5,
-				Reuse     => 1
+				Proto => 'tcp',
+				Listen => 5,
+				Reuse => 1
 );
 
 die "create/bind error: $!\n" unless $sock;

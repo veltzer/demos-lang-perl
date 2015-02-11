@@ -10,18 +10,16 @@ open(CHGFILE, "+<$ARGV[2]") || die("Cannot open file $ARGV[2]\n");
 
 # Seek to the beginning of the record
 seek(CHGFILE, 10*($ARGV[0] - 1), 0) ||
-  die("Unable to seek to record $ARGV[0]\n");
+	die("Unable to seek to record $ARGV[0]\n");
 
 # Make sure the record is no longer than 10 characters
-  @record = split(//, $ARGV[1]);
+@record = split(//, $ARGV[1]);
 
 # If the record is shorter than 10 characters, pad it with blanks
-  while (@record < 10) {
-    $record[@record] = " ";
-  }
-  $record = join("", @record[0..9]);
+while (@record < 10) {
+	$record[@record] = " ";
+}
+$record = join("", @record[0..9]);
 
 # Replace the record
-  print CHGFILE ($record);
-
-
+print CHGFILE ($record);

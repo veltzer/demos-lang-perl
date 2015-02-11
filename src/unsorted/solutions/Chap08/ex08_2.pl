@@ -7,15 +7,14 @@
 $word = shift(@ARGV);
 
 while ($line = <>) {
-  $lineno++;
-  if ($line =~ /$word/g) {
-    print("line $lineno: ", pos($line) - length($word) + 1);
-    $flag = 1;
-  }
-  while ($line =~ /$word/g) {
-    print(" ", pos($line) - length($word) + 1);
-  }
-  print("\n") if ($flag);
-  $flag = 0;
+	$lineno++;
+	if ($line =~ /$word/g) {
+		print("line $lineno: ", pos($line) - length($word) + 1);
+		$flag = 1;
+	}
+	while ($line =~ /$word/g) {
+		print(" ", pos($line) - length($word) + 1);
+	}
+	print("\n") if ($flag);
+	$flag = 0;
 }
-  

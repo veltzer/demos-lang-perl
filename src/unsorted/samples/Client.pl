@@ -4,7 +4,7 @@ use IO::Socket;
 
 $sock = new IO::Socket::INET(	PeerAddr => $ARGV[0],
 				PeerPort => 80,
-				Proto    => 'tcp'
+				Proto => 'tcp'
 );
 
 die "create/connect error: $!\n" unless $sock;

@@ -5,13 +5,13 @@
 &xyz; # Subroutine doesn't exist
 
 BEGIN {
-  print("Program starting\n");
+	print("Program starting\n");
 }
 
 AUTOLOAD {
-  die("$AUTOLOAD doesn\'t exist!\n");
+	die("$AUTOLOAD doesn\'t exist!\n");
 }
 
 END {
-  print("Program ending\n");
+	print("Program ending\n");
 }

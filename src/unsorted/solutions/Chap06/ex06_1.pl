@@ -10,6 +10,5 @@ chomp(@input);
 %phone = split(/,/, join(",", @input));
 
 foreach $name (sort(keys(%phone))) {
-  print("$name\t$phone{$name}\n");
+	print("$name\t$phone{$name}\n");
 }
-

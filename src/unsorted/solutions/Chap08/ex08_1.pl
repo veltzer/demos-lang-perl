@@ -6,8 +6,7 @@
 $pattern = shift(@ARGV);
 
 while ($line = <>) {
-  if ($line =~ /$pattern/) {
-    print($line);
-  }
+	if ($line =~ /$pattern/) {
+		print($line);
+	}
 }
-
