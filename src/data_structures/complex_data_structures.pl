@@ -1,22 +1,26 @@
-#! /usr/bin/perl -w
+#!/usr/bin/perl -w
 
-#Create a complex data structure:
+=head
+
+This is an example of creating a complex data structure in perl
+
+=cut
 
 %company = (
 	SALES => {
-		VP    => 'McClure',
-		TEAM  => [
+		VP => 'McClure',
+		TEAM => [
 			{ NAME => 'Stefannson', COMMISSION => .15 },
-			{ NAME => 'Franklin',   COMMISSION => .17 },
+			{ NAME => 'Franklin', COMMISSION => .17 },
 		]
 	},
 	TECH_SUPT => {
-		VP        => 'Hall',
+		VP => 'Hall',
 		DIVISIONS => [
 			{
-				NAME      => 'Nanson',
+				NAME => 'Nanson',
 				DISTRICTS => [
-					{ NAME => 'Greely',   SALARY => 54000 },
+					{ NAME => 'Greely', SALARY => 54000 },
 					{ NAME => 'Bartlett', SALARY => 54000 },
 				]
 			},
@@ -24,9 +28,7 @@
 	},
 );
 
-#Whew... What a structure.
-
-#Give Greely a  6% raise:
-
+# give Greely a 6% raise
 $company{TECH_SUPT}{DIVISIONS}[0]{DISTRICTS}[0]{SALARY} *= 1.06;
+# print his salary
 print "$company{TECH_SUPT}{DIVISIONS}[0]{DISTRICTS}[0]{SALARY}\n";
