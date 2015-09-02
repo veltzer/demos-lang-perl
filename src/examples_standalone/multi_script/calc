@@ -1,0 +1,10 @@
+#!/usr/bin/perl -w
+
+# this is a calculator script
+
+if ($0 eq "./calc") {
+	print "You want a calculator, dont you?\n";
+}
+if ($0 eq "./printer") {
+	print "You want a printer, dont you?\n";
+}
