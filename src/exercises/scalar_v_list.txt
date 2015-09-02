@@ -1,3 +1,5 @@
+Identify the context (scalar or list) of the following statements:
+
 1)	$x = expr;
 
 2)	($x, $y) = expr;

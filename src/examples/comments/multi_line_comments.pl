@@ -2,8 +2,12 @@
 
 =head comment
 
-This example shows multi line comments in perl
+This example shows multi line comments in perl.
+This is also the actual multi-line comment...:)
 
 =cut
 
-print 'Hello, World!'."\n"
+use strict;
+use warnings;
+
+print "Hello, World!\n"

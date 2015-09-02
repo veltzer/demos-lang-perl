@@ -1,0 +1,321 @@
+﻿Advanced Perl Exercises
+
+Chapter 1 – Programming with references
+
+Write a program, using a subroutine, which gets a list of file names in the current directory, replaces each file name with a base name only and a first upper case letter. The manipulation should be done without copying the array, and without using a new array (all changes should be done on the same array).
+
+Example:
+List of file names:   ref.pl    add_ref.pl
+Output:   Ref   Add_ref 
+
+
+
+Chapter 2 – Complex data structures
+
+Write a program that will process each line in the /etc/passwd file. For each line it will create a hash reference, storing the user id and his default shell, for each user name.
+Use a function to process each line, returning the name and the reference needed.
+After processing the entire file, print out, for each user name, his user id and default shell.
+
+
+
+
+Chapter 3 – Object Oriented Design and Programming
+
+Write a module, named Persons.
+It should contain the following:
+A private counter, for the number of objects currently defined.
+A constructor, which allocated a new object, containing two hash keys: name and age, with an empty value, increments the total number of objects defined and returns a reference to the newly created object.
+A method to initialize the name key of an object.
+A method to initialize the hash key of an object.
+A method returning the total number of defined objects (which is a private variable).
+And a destructor, which decrements the total number of defined objects, upon releasing an object from memory.
+
+This module will be use in a Perl program, which will allocate two objects, print the current defined objects, remove an object and print again the total number of objects.
+
+
+Chapter 4 – Advanced I/O and Networking
+
+Change the given examples to form the followings:
+1. Connect to your localhost and print out the home directory listings. Afterwards free the object of the connection (it is a hash reference).
+2. Transfer the file /etc/passwd, using ftp to your localhost, to the current directory.
+
+
+Chapter 5 – Perl and PHP
+
+No exercises for this chapter.
+
+
+
+Chapter 6 – Database access with DBI
+
+Write a Perl script to list all users in the table test, replacing each user's date to the current date and list all users' information back to the screen.
+
+
+Chapter 7 – Creating graphical user interfaces
+
+Write a Perl-Tk script that calculates the total cost of a customer's meal. The available items, can be ordered, are: hamburger, pizza and coke.
+Choose the cost of each item and place a calculation button, which upon being presses, the total cost will be shown, something like the following:
+   
+Advanced Perl solutions
+
+
+Chapter 1 – Programming with references
+
+files.pl
+
+#!/usr/bin/perl 
+
+sub Inverse { 
+        my $ref=shift; 
+        print "\narray is @$ref\n"; 
+        for(my $i=0;$i<scalar(@$ref);$i++) { 
+                $ref->[$i]=ucfirst $ref->[$i]; 
+                $ref->[$i]=(split /\./,$ref->[$i])[0]; 
+        } 
+        return $ref 
+} 
+
+my @files=(glob '*'); 
+print "@files"; 
+Inverse(\@files); 
+print "After: @files\n"; 
+
+
+Chapter 2 – Complex data structures
+
+pwd_ref.pl
+
+#!/usr/bin/perl 
+
+use strict; 
+use warnings; 
+
+my %Hash; 
+
+sub Process { 
+        my $line=shift; 
+        my ($uid,$name,$shell)=(split /:/,$line)[2,0,6]; 
+        chomp $shell; 
+        return ($name,{uid=>$uid,shell=>$shell}); 
+} 
+
+open (PWD, "/etc/passwd") or die "Can't open file !\n"; 
+while (<PWD>) { 
+        my ($name, $ref)=Process($_); 
+        $Hash{$name}=$ref; 
+} 
+close PWD; 
+
+for my $user (keys %Hash) { 
+        print "Name: $user; Uid: $Hash{$user}{uid}; 
+			Shell: $Hash{$user}{shell}\n"; 
+} 
+
+
+
+Chapter 3 – Object Oriented Design and Programming
+
+Persons.pm
+
+package Persons; 
+use strict; 
+
+my $Census=0; 
+
+sub new { 
+        my $self  = {}; 
+        $self->{name}   = undef; 
+        $self->{age}    = undef; 
+        $Census++; 
+        bless($self); 
+        return $self; 
+} 
+
+sub name { 
+        my $self = shift; 
+        if (@_) { $self->{name} = shift } 
+        return $self->{name}; 
+} 
+
+sub age { 
+        my $self = shift; 
+        if (@_) { $self->{age} = shift } 
+        return $self->{age}; 
+} 
+
+sub population { 
+        return $Census; 
+} 
+
+sub DESTROY { --$Census } 
+
+1;  # so the require or use succeeds 
+
+persons.pl
+
+#!/usr/bin/perl 
+
+use strict; 
+use warnings; 
+
+use Persons; 
+
+my $me=Persons->new(); 
+$me->{name}="Shachar"; 
+$me->{age}=34; 
+print $me->population().": "; 
+print "$me->{name}, $me->{age}, till now, there are: ".Persons::population()." users\n"; 
+my $you=Persons->new(); 
+$you->{name}="Jack"; 
+$you->{age}=36; 
+print $you->population().": "; 
+print "$you->{name}, $you->{age}, till now, there are: ".Persons::population()." users\n"; 
+$me={}; # Dealocate an object 
+print "Now there are: ".Persons::population()." users remaining\n"; 
+
+
+
+Chapter 4 – Advanced I/O and Networking
+
+1. telnet_ex.pl
+
+#!/usr/bin/perl 
+use strict; 
+use warnings; 
+use Net::Telnet (); 
+my $t = Net::Telnet->new(); 
+$t->open('localhost'); 
+$t->login('student', 'password'); 
+my @lines = $t->cmd("ls -l"); 
+print @lines; 
+print "\n"; 
+$t={}; 
+
+
+2. ftp_ex.pl 
+
+#!/usr/bin/perl 
+use strict; 
+use warnings; 
+use Net::FTP; 
+use File::Basename qw(dirname); 
+use File::Spec; 
+my $ftp = Net::FTP->new('localhost') or die $!; 
+$ftp->login('student', 'password') or die $!; 
+$ftp->get('/etc/passwd'); 
+
+
+Chapter 5 – Perl and PHP
+
+No exercises were given.
+
+
+
+Chapter 6 – Database access with DBI
+
+update.pl 
+
+#!/usr/bin/perl 
+use strict; 
+use warnings; 
+use DBI; 
+# Defining the connection arguments: 
+my $database='test'; 
+my $host='localhost'; 
+my $port=3306; 
+#my $dsn = "DBI:mysql:database=$database;host=$hostname;port=$port"; 
+my $dsn="dbi:mysql:test:$host:$port"; 
+my $user='user'; 
+my $password=''; 
+my ($name,$date); 
+
+# Connecting, using a handle: 
+my $dbh; 
+print "Connection failed !\n" if (! ($dbh = DBI->connect($dsn, $user, $password))); 
+
+# Prepare the query 
+{ 
+        my $query = "SELECT * FROM mytable ORDER BY user"; 
+        my $query_handle = $dbh->prepare($query); 
+
+        # Execute the query 
+        $query_handle->execute(); 
+
+        # Bind table columns to variables 
+        $query_handle->bind_columns(\$user, \$name, \$date); 
+
+        # Loop through results - This is a loop over the query 			records. 
+        while($query_handle->fetch()) { 
+                print "$user, $name, $date\n"; 
+        } 
+} 
+my ($year,$month,$day)= (localtime())[5,4,3]; 
+$year+=1900; 
+{ 
+        my $query = "update mytable set date='$year.$month.$day'"; 
+        my $query_handle = $dbh->prepare($query); 
+
+        $query_handle->execute(); 
+} 
+
+{ 
+        my $query = "SELECT * FROM mytable ORDER BY user"; 
+        my $query_handle = $dbh->prepare($query); 
+
+        $query_handle->execute(); 
+
+        $query_handle->bind_columns(\$user, \$name, \$date); 
+
+        while($query_handle->fetch()) { 
+                print "$user, $name, $date\n"; 
+        } 
+} 
+# Disconnecting, using the same handle: 
+print "Disconnecting failed !\n" if (! $dbh->disconnect()); 
+
+
+
+
+Chapter 7 – Creating graphical user interfaces
+
+menu.tk
+
+#!/usr/bin/perl 
+use Tk; 
+
+my $mw = new MainWindow; # Main Window 
+
+my $frm_name = $mw -> Frame() -> pack(); #New Frame 
+my $lab1 = $frm_name -> Label(-text=>"Hamburgers (2 NIS each):")  
+                     -> pack(); 
+my $ent1 = $frm_name -> Entry() -> pack(); 
+$ent1->insert(0,"0"); 
+my $lab2 = $frm_name -> Label(-text=>"Pizzas (1.5 NIS each):") 
+                     -> pack(); 
+my $ent2 = $frm_name -> Entry() -> pack(); 
+$ent2->insert(0,"0"); 
+my $lab3 = $frm_name -> Label(-text=>"Cokes (0.5 NIS each):") 
+                     -> pack(); 
+my $ent3 = $frm_name -> Entry() -> pack(); 
+$ent3->insert(0,"0"); 
+my $lab = $frm_name  -> Label(-text=>"Total (NIS):") -> pack(); 
+my $ent = $frm_name  -> Entry() -> pack(); 
+$ent->insert(0,"0"); 
+
+my $but = $mw -> Button(-text=>"Total", -command =>\&push_button) 		           -> pack(); 
+
+MainLoop; 
+
+#This function will be executed when the button is pushed 
+sub push_button { 
+        $ent->delete(0,"end"); # Clearing the field from character 							0 till the end. 
+        my $calc1=$ent1->get(); # Get the contents of this field. 
+        my $calc2=$ent2->get(); # Get the contents of this field. 
+        my $calc3=$ent3->get(); # Get the contents of this field. 
+        $ent -> insert(0, $calc1*2+$calc2*1.5+$calc3*0.5); 
+				# Write the result. 
+} 
+
+
+ 
+

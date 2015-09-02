@@ -1,6 +1,11 @@
 #!/usr/bin/perl -w
 
-# A simple demo of how to write functions in perl
+=head
+
+A simple demo of how to write functions in perl.
+Notice that this function is without a prototype.
+
+=cut
 
 use strict;
 use diagnostics;

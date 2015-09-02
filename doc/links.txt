@@ -1,2 +1,8 @@
+Interesting links for the perl language:
+
+Mark Jason Dominus:
+	http://blog.plover.com/
+	http://perl.plover.com/
+
 keeping users, passwords, hosts, ports and database names out of your code:
 	http://www.perlmonks.org/?node_id=519337

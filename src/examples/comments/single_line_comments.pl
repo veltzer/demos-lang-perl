@@ -5,4 +5,7 @@
 # If a line has statements then the part of the line from the '#'
 # sign onwards is ignored.
 
-print 'Hello, World!'."\n" # this is a comment
+use strict;
+use warnings;
+
+print "Hello, World!\n" # this is a comment
