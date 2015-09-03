@@ -1,6 +1,10 @@
 #!/usr/bin/perl -w
 
-# do fibonacci using a recursive method
+=head
+
+Do fibonacci using a recursive method
+
+=cut
 
 use strict;
 use warnings;

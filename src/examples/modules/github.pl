@@ -7,6 +7,8 @@ Example of how to use a third party module, in this case the GitHub module.
 =cut
 
 # uses
+use strict;
+use warnings;
 
 use Net::GitHub;
 use Config::IniFiles;

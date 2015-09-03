@@ -7,7 +7,7 @@ This is an egrep(1) implementation in perl using the <> (diamond) operator.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my $pattern = shift @ARGV;
 while(<ARGV>) {

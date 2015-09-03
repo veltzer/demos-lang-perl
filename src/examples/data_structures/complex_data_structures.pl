@@ -6,6 +6,9 @@ This is an example of creating a complex data structure in perl
 
 =cut
 
+use strict;
+use warnings;
+
 %company = (
 	SALES => {
 		VP => 'McClure',

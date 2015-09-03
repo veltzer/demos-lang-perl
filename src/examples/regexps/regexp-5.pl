@@ -1,5 +1,12 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
+use strict;
+use warnings;
+
 $url = shift;
 
 die "Invalid URL!\n" if ($url !~ m!^ (\w+) :// ((\w+\.)*\w+) (:(\d+))? (/.*)? $!x) ;

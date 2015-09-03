@@ -10,6 +10,9 @@ NOTES:
 
 =cut
 
+use strict;
+use warnings;
+
 my $var;
 
 print "var is $var\n"

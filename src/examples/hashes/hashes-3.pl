@@ -1,5 +1,12 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
+use strict;
+use warnings;
+
 %hash = (
 	John => 7,
 	Mary => 3,

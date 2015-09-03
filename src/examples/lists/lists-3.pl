@@ -1,5 +1,12 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
+use strict;
+use warnings;
+
 while ($line = <STDIN>) {
 	@words = split(" ", $line);
 	foreach $word (@words) {

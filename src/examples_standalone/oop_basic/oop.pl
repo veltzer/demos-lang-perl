@@ -1,5 +1,12 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
+use strict;
+use warnings;
+
 use Plane;
 use F16;
 

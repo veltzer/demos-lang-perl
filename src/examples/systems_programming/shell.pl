@@ -7,6 +7,9 @@ and the 'eval' function.
 
 =cut
 
+use strict;
+use warnings;
+
 while (<>) {
 	print eval($_);
 }

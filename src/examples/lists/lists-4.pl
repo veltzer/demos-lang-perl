@@ -1,5 +1,12 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
+use strict;
+use warnings;
+
 while ($line = <STDIN>) {
 	chomp $line;
 	@data = split(":", $line);
