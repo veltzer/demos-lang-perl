@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
 
+use strict;
+use warnings;
+
 my($random)=rand(1);
 if($random<0.5) {
 	print "success\n";

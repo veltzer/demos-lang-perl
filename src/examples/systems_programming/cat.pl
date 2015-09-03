@@ -12,7 +12,6 @@ Note that this example reads input both from STDIN and from the command line.
 use strict;
 use warnings;
 
-my($line);
-while($line=<>) {
-	print $line;
+while(<>) {
+	print;
 }

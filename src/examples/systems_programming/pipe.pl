@@ -2,7 +2,8 @@
 
 =head
 
-This code uses the package Swap to swap two integers
+This example shows how to pipe data from a child
+process back into our process.
 
 =cut
 
