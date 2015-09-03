@@ -1,8 +1,16 @@
 #!/usr/bin/perl -w
 
-my $line;
-while($line=<STDIN>) {
-	if ($line=~/mark/) {
-		print $line;
+=head
+
+This script only print lines which match the regexp /mark/.
+
+=cut
+
+use strict;
+use warnings;
+
+while(<>) {
+	if (/mark/) {
+		print;
 	}
 }

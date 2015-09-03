@@ -1,5 +1,11 @@
 #!/usr/bin/perl -w
 
+=head
+
+This is an exmple of an array with mixed data and array refs.
+
+=cut
+
 my @arr = ( 6, 8, 10);
 
 my @full = ('amsterdam' , \@arr, 'london', \@arr, 'paris');

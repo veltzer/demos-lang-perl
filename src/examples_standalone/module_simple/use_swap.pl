@@ -17,5 +17,3 @@ my($b)=6;
 
 print "a is $a\n";
 print "b is $b\n";
-my($pi)=$Swap::PI;
-print "PI is $pi\n";

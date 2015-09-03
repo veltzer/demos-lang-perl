@@ -5,6 +5,8 @@
 This is a general script to grep using perl to overcome some of the deficiencies
 of grep(1) grepping.
 
+This example is without the diamond operator.
+
 =cut
 
 use strict;

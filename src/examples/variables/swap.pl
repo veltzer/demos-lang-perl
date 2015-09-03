@@ -2,7 +2,8 @@
 
 =head
 
-This script has a function to swap two numbers.
+This script shows the various ways in which you can swap the
+values of two variables in perl.
 
 =cut
 
@@ -16,7 +17,16 @@ sub swap_numbers {
 
 my($a)=5;
 my($b)=6;
+
+print "a is $a\n";
+print "b is $b\n";
+
 ($a,$b)=swap_numbers($a,$b);
+
+print "a is $a\n";
+print "b is $b\n";
+
+($a, $b)=($b, $a);
 
 print "a is $a\n";
 print "b is $b\n";

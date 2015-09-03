@@ -2,6 +2,8 @@
 
 =head
 
+This example shows how to swap two array references.
+
 =cut
 
 use strict;
