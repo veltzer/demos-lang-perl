@@ -10,7 +10,6 @@ built-in but rather module based (the 'List::Util' module in this case).
 
 use strict;
 use warnings;
-use diagnostics;
 
 use List::Util qw(reduce);
 

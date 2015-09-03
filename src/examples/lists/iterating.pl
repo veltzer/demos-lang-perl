@@ -8,7 +8,6 @@ This shows the 3 ways of iterating an array in perl.
 
 use strict;
 use warnings;
-use diagnostics;
 
 my @words = split ':', 'this:is:the:content:of:the:line';
 foreach my $word (@words) {

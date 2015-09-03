@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# this script has a function to swap two numbers
+=head
+
+This script has a function to swap two numbers.
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub swap_numbers {
 	my($a,$b)=@_;

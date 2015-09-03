@@ -1,8 +1,12 @@
 #!/usr/bin/perl -w
 
-# This script reverses the lines in the input file
+=head
+
+This script reverses the lines in the input file
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 print reverse(<STDIN>);

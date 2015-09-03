@@ -11,7 +11,7 @@ TODO:
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 # this is the same as 'print STDOUT'
 print "Hello, World!\n";

@@ -8,6 +8,6 @@ With -w, strict and diagnostics you get much better error handling.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 print 'Hello, World!'."\n"

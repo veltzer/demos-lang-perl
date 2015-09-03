@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# This script implements an RPM calculator with an arbitrary
-# length stack
+=head
+
+This script implements an RPM calculator with an arbitrary
+length stack
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my(@numbers);
 my($line);

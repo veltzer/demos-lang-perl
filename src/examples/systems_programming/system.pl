@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# demo use of sort with a "g" discrimation function 
+=head
+
+Demo use of sort with a "g" discrimation function 
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($output)=`./stupid_script.pl`;
 if($output eq "success\n") {

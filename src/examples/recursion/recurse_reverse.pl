@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This function reverses an array like the build in reverse function
+=head
+
+This function reverses an array like the build in reverse function
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub rev {
 	if(@_) {

@@ -1,7 +1,11 @@
 #!/usr/bin/perl -w
 
+=head
+
+=cut
+
 use strict;
-use diagnostics;
+use warnings;
 
 sub swap {
 	my($pa,$pb)=@_;

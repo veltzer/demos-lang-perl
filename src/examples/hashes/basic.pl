@@ -8,7 +8,7 @@ You can see both initialisation and iteration in this example.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my(%myhash)=(
 	'mark'=>1972,

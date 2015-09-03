@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This code uses the package Swap to swap two integers
+=head
+
+This code uses the package Swap to swap two integers.
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 use Swap;
 

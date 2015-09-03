@@ -12,11 +12,11 @@ since otherwise it will attempt to read more than one line...
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 print STDOUT 'What is your name: ';
 flush STDOUT;
 my($name);
 $name=<STDIN>;
 chomp($name);
-print 'Your name is ['.$name.']'."\n";
+print "Your name is [$name]\n";

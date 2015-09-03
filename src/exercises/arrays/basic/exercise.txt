@@ -17,16 +17,3 @@
 	foreach $word (@words) {
 		# do something with $word
 	}
-
-- input a dictionary
-	print the reverse of the dictionary.
-
-- phonebook exercise.
-	store a phone book in a file (phonebook.txt).
-	decide on the format.
-	Allow to search for a phone number according to name.
-	make it efficient.
-
-- phonebook exercise (cont)
-	allow to add name/number combos to the phonebook.
-	save changes to disk.

@@ -10,7 +10,7 @@ entity or not).
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($num)=1000000;
 my(@array);

@@ -7,7 +7,7 @@ A simple demo of the perl 'readdir' function.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($dir)=".";
 opendir(DIR,$dir) || die("error in opendir");

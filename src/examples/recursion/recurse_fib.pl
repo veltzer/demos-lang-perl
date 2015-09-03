@@ -3,7 +3,7 @@
 # do fibonacci using a recursive method
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub fib {
 	my($num)=@_;

@@ -7,7 +7,7 @@ This is a demo of the next statement in perl.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($i)=0;
 while($i<10) {

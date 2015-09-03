@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This script implements an RPM calculator with a 2 slot stack
+=head
+
+This script implements an RPM calculator with a 2 slot stack
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($one,$two);
 my($line);

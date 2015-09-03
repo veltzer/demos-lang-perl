@@ -8,7 +8,7 @@ Notice that this function is without a prototype.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub sum {
 	my($sum)=0;

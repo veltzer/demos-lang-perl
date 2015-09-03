@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This script demos slices and the order of assignment in slices
+=head
+
+This script demos slices and the order of assignment in slices
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my(@l)=(6,9);
 @l[0,1]=@l[1,0];

@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# this script trims all lines in files given to it to 5 characters 
+=head
+
+This script trims all lines in files given to it to 5 characters 
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 =head comment
 

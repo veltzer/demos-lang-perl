@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# This script implements an RPM calculator with a 2 slot stack
-# using eval to shorten the code
+=head
+
+This script implements an RPM calculator with a 2 slot stack
+using eval to shorten the code
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($one,$two);
 my($line);

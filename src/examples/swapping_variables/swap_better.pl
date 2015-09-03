@@ -1,11 +1,15 @@
 #!/usr/bin/perl -w
 
-# This script swap even and odd lines in STDIN and prints
-# them out to STDOUT in a way appropriate to be used
-# in a pipe (no array).
+=head
+
+This script swap even and odd lines in STDIN and prints
+them out to STDOUT in a way appropriate to be used
+in a pipe (no array).
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line,$other_line);
 while(!eof(STDIN)) {

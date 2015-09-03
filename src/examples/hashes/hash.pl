@@ -4,7 +4,7 @@
 # table and prints it out
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 my(%hash);

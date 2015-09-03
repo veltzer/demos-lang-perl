@@ -1,7 +1,13 @@
 #!/usr/bin/perl -w
 
+=head
+
+Factorial function implemented with recursion.
+
+=cut
+
 use strict;
-use diagnostics;
+use warnings;
 
 sub factorial {
 	my($num)=@_;

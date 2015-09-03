@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# This script counts number of appearances of the words in STDIN 
-# and works in a case insensitive manner.
+=head
+
+This script counts number of appearances of the words in STDIN 
+and works in a case insensitive manner.
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 my(%hash);

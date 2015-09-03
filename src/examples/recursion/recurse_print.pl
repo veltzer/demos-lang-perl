@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This function prints an array in reverse order
+=head
+
+This function prints an array in reverse order
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub rev_print {
 	if(@_) {

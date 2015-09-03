@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# this demos fork and wait 
+=head
+
+This demos fork and wait 
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 if($#ARGV!=0) {
 	die("usage: fork.pl [num_of_children]");

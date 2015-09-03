@@ -8,7 +8,7 @@ of grep(1) grepping.
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($pattern)=$ARGV[0];
 my($debug)=0;
