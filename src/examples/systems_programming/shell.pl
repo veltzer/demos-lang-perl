@@ -11,5 +11,5 @@ use strict;
 use warnings;
 
 while (<>) {
-	print eval($_);
+	print eval."\n";
 }
