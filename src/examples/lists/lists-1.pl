@@ -2,6 +2,8 @@
 
 =head
 
+This is a solution to the reverse exercise
+
 =cut
 
 use strict;

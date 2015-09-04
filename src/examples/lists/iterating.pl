@@ -2,7 +2,7 @@
 
 =head
 
-This shows the 3 ways of iterating an array in perl.
+This shows the 4 ways of iterating an array in perl.
 
 =cut
 
@@ -10,6 +10,7 @@ use strict;
 use warnings;
 
 my @words = split ':', 'this:is:the:content:of:the:line';
+
 foreach my $word (@words) {
 	print "word is $word\n";
 }
