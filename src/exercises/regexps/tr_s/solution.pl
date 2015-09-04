@@ -2,6 +2,8 @@
 
 =head
 
+This a solution to the 'tr -s' exercise.
+
 =cut
 
 use strict;

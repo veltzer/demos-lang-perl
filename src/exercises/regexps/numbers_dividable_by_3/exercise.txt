@@ -1,0 +1,2 @@
+Write a program that receives as text and only prints out the numbers in the text
+which divide by 3 with no leftovers.

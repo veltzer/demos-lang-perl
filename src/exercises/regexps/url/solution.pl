@@ -2,16 +2,21 @@
 
 =head
 
+This is a solution to the URL exercise.
+
+Run it like this:
+./solution.pl http://www.gnu.org
+
 =cut
 
 use strict;
 use warnings;
 
-$url = shift;
+my $url = shift || 'http://www.gnu.org';
 
 die "Invalid URL!\n" if ($url !~ m!^ (\w+) :// ((\w+\.)*\w+) (:(\d+))? (/.*)? $!x) ;
 
-($prot, $host, $port, $path) = ($1, $2, $5, $6);
+my ($prot, $host, $port, $path) = ($1, $2, $5, $6);
 
 print "Protocol: $prot\n";
 print "Host: $host\n";

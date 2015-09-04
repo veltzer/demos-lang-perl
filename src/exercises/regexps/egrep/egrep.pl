@@ -14,6 +14,8 @@ use diagnostics;
 
 my $pattern = shift; # shift works on @ARGV by default
 
+# the diamond (<>) reads from all files on the command line or stdin into $_
 while (<>) {
+	# matching is vs $_ by default and so is print
 	print if (/$pattern/);
 }

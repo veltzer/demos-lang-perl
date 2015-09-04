@@ -1,0 +1,6 @@
+Write a perl program that receives a single argument which is a url
+on the command line and breaks it down into it parts:
+- protocol
+- host
+- port
+- part
