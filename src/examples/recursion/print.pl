@@ -2,7 +2,10 @@
 
 =head
 
-This function prints an array in reverse order
+This function prints an array in reverse order.
+Obviously this is not a very efficient solution since
+this will require lots of stack.
+It's much better to do it using an index.
 
 =cut
 

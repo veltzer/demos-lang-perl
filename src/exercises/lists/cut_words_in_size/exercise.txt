@@ -1,0 +1,2 @@
+Write a script that recevies text and cuts all words to be at
+most 5 characters.

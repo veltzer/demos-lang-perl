@@ -7,10 +7,11 @@
 use strict;
 use warnings;
 
+my $line;
 while ($line = <STDIN>) {
-	@words = split(" ", $line);
-	foreach $word (@words) {
+	my @words = split(' ', $line);
+	foreach my $word (@words) {
 		$word = substr($word, 0, 5);
 	}
-	print join(" ", @words), "\n";
+	print join(' ', @words), "\n";
 }

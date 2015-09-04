@@ -9,9 +9,9 @@ List all signals that perl knows about.
 use strict;
 use warnings;
 
-foreach $k (keys %SIG) { 
+foreach my $k (keys %SIG) { 
 	if(defined($SIG{$k})) {
-		print "$k ".$SIG{$k}." \n"; 
+		print "$k ".$SIG{$k}."\n"; 
 	} else {
 		print "$k\n"; 
 	}

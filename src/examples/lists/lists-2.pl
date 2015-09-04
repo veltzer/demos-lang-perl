@@ -9,7 +9,7 @@ use warnings;
 
 while ($line = <STDIN>) {
 	chomp $line;
-	foreach $digit (split("", $line)) {
+	foreach $digit (split('', $line)) {
 		$counters[$digit]++;
 	}
 }

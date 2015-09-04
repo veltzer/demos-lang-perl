@@ -2,7 +2,7 @@
 
 =head
 
-Do fibonacci using a recursive method
+Do fibonacci using a recursive method.
 
 =cut
 
@@ -38,5 +38,5 @@ sub fib_2 {
 
 for(my($i)=0;$i<10;$i++) {
 	my($f_n,$f_n_1)=fib_2($i);
-	print $i." -> ".fib($i)." ".$f_n."\n";
+	print $i.' -> '.fib($i).' '.$f_n."\n";
 }
