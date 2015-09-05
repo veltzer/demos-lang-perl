@@ -1,0 +1,18 @@
+Write an rpn (reverse polish notation) calculator.
+It receives its input from a file (command line or standard input).
+Each line is either a number or an operator.
+If it is a number it goes into a stack.
+If its an operator it operates on the two topmost elements of the stack
+and stores the result back onto the stack.
+
+The program should support all 4 operators (+,-,/,*).
+
+At the end the program prints the state of the stack.
+
+Example input:
+2
+3
++
+
+Example output:
+5
