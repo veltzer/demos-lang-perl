@@ -1,5 +1,3 @@
-- do example of signal handling
-	(I already have a signal handling folder).
 - do perl regexp examples.
 	simple and complex ones.
 	take some from the slides.
