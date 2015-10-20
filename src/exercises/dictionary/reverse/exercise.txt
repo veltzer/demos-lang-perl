@@ -1,0 +1,2 @@
+input a dictionary
+print the reverse of the dictionary.

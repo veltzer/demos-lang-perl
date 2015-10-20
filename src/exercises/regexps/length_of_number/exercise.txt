@@ -1,0 +1,5 @@
+Write a program that receives text and substitutes every number
+in the text by the number of it's digits.
+
+For instance:
+I was 56 years old then => I was 2 years old then

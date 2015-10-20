@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# this script removes the password field from /etc/passwd
+=head
+
+This script removes the password field from /etc/passwd
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 while($line=<STDIN>) {

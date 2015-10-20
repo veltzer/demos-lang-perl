@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This is an ASCII table demo
+=head
+
+This is an ASCII table demo
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 my($exit)=0;

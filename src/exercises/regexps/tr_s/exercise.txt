@@ -1,0 +1,3 @@
+Write a perl script which receives text and squeezes every set
+of white space characters to only it's first one.
+(something like 'tr -s'...).

@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 use strict;
-use diagnostics;
+use warnings;
 
 my(@counters);
 for(my($i)=0;$i<256;$i++) {

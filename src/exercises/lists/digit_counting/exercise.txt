@@ -1,0 +1,4 @@
+Write a script that receives file input.
+The script should count for each digit (0..9)
+how many times this digit appeared in the file.
+The script should output the accumulated information.

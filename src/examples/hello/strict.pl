@@ -3,11 +3,11 @@
 =head
 
 This example shows how to use perl in real life.
-With -w, strict and diagnostics you get much better error handling.
+With -w, 'use strict' and 'use warnings' you get much better error handling.
 
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
-print 'Hello, World!'."\n"
+print "Hello, World!\n"

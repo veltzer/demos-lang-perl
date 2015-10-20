@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# this script prints out all numbers in the input (<>)
-# which are multiples of 3.
+=head
+
+This script prints out all numbers in the input (<>)
+which are multiples of 3.
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 while($line=<>) {

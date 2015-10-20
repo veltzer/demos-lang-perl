@@ -1,0 +1,19 @@
+Read data from STDIN and swap odd and even lines.
+
+Example:
+
+input file:
+===========
+one
+two
+three
+four
+===========
+
+output file:
+============
+two
+one
+four
+three
+============

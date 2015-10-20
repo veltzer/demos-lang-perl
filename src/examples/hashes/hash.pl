@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# This script stores all user names and their shells in a hash
-# table and prints it out
+=head
+
+This script stores all user names and their shells in a hash
+table and prints it out
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($line);
 my(%hash);

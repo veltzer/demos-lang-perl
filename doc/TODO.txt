@@ -1,0 +1,5 @@
+- do perl regexp examples.
+	simple and complex ones.
+	take some from the slides.
+- do perl example of writing and reading from another process.
+	(using select).

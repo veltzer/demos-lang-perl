@@ -19,7 +19,7 @@ http://www.perl.com/pub/2006/02/23/advanced_subroutines.html
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub check_context {
 	# True

@@ -12,7 +12,6 @@ http://perl.plover.com/classes/fp/samples/slide015.html
 
 use strict;
 use warnings;
-use diagnostics;
 
 sub mkcounter {
 	my $a = shift;

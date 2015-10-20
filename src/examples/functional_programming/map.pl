@@ -11,7 +11,6 @@ The 'uc' function in the example is perl's built-in upper case function.
 
 use strict;
 use warnings;
-use diagnostics;
 
 my(@l)=("mark", "yaron", "hila");
 my(@r)=map( uc($_), @l);

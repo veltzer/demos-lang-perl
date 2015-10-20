@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# This script parses a url
+=head
+
+This script parses a url
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($url_to_parse)="http://www.microsoft.com:8080/unregister/force.asp?please=yes";
 

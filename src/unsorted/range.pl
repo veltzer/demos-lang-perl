@@ -1,10 +1,14 @@
 #!/usr/bin/perl -w
 
-# this script prints all the hidden files of a directory given
-# to it on the command line
+=head
+
+This script prints all the hidden files of a directory given
+to it on the command line
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($file,$off,$num)=@ARGV;
 

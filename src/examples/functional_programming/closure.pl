@@ -12,7 +12,6 @@ http://perl.plover.com/classes/fp/samples/slide011.html
 
 use strict;
 use warnings;
-use diagnostics;
 
 sub outer {
 	my $x = shift;

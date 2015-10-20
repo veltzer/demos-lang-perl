@@ -1,11 +1,15 @@
 #!/usr/bin/perl -w
 
-# this script prints out a login statement and waits
-# for a non empty login and then accepts a name and
-# a password printing all the information at the end
+=head
+
+This script prints out a login statement and waits
+for a non empty login and then accepts a name and
+a password printing all the information at the end
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 my($login,$name,$password);
 

@@ -12,7 +12,7 @@ since otherwise it will attempt to read more than one line...
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub show_yes_no_dialog($) {
 	my($question)=$_[0];

@@ -1,7 +1,13 @@
 #!/usr/bin/perl -w
 
+=head
+
+An example of using references in perl.
+
+=cut
+
 use strict;
-use diagnostics;
+use warnings;
 
 my($a)=7;
 my($p)=\$a;

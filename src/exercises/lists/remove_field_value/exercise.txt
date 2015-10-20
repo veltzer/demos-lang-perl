@@ -1,0 +1,11 @@
+Write a script that reads a text file.
+Each line of the file is a bunch of fiels delimited by ':'.
+Make the second field into nothing.
+
+Example input:
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+
+Example output:
+root::0:0:root:/root:/bin/bash
+daemon::1:1:daemon:/usr/sbin:/usr/sbin/nologin

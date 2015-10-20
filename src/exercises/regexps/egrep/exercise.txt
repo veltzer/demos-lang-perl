@@ -1,0 +1,2 @@
+Write something like egrep(1) in perl.
+Make it as short as possible.

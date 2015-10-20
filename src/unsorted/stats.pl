@@ -1,9 +1,13 @@
 #!/usr/bin/perl -w
 
-# print statistics about an array in a function
+=head
+
+Print statistics about an array in a function
+
+=cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 sub stats {
 	my($sum)=0;
