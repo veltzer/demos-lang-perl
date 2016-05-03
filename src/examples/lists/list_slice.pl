@@ -1,5 +1,11 @@
 #!/usr/bin/perl -w
 
+=head
+
+This example shows that you can slice a list in perl
+
+=cut
+
 use strict;
 use warnings;
 

@@ -17,9 +17,9 @@ allocating more space which is needed for unshifting).
 
 use strict;
 use warnings;
-use Benchmark ':hireswallclock';
+use Benchmark;
 
-my($num)=10000000;
+my($num)=1000000;
 
 sub push_pop {
 	my(@array);
