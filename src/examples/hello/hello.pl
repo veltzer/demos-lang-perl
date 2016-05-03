@@ -9,7 +9,4 @@ variable after running this script.
 
 =cut
 
-use strict;
-use warnings;
-
-print "Hello, World!\n"
+print "Hello, World!\n";

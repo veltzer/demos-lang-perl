@@ -10,4 +10,4 @@ With -w, 'use strict' and 'use warnings' you get much better error handling.
 use strict;
 use warnings;
 
-print "Hello, World!\n"
+print "Hello, World!\n";
