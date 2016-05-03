@@ -10,12 +10,14 @@ You can see both initialisation and iteration in this example.
 use strict;
 use warnings;
 
-my(%myhash)=(
+my %myhash=(
 	'mark'=>1972,
 	'doron'=>1976,
 );
 
+my $newline="\n";
+
 while(my($key,$val)=each(%myhash)) {
-	print 'key is ['.$key."]\n";
-	print 'val is ['.$val."]\n";
+	print 'key is ['.$key.']'.$newline;
+	print 'val is ['.$val.']'.$newline;
 }
