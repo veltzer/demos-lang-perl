@@ -1,0 +1,2 @@
+Print, by parsing the output of ifconfig/ipconfig
+the ip addresses of your machine.
