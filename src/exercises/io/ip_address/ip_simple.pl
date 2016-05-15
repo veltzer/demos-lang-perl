@@ -4,6 +4,9 @@ use strict;
 use warnings;
 
 my @lines=`ifconfig`;
+if($?!=0) {
+	die("something went wrong with running ifconfig...");
+}
 foreach my $line (@lines) {
 	my $pos=index($line, 'inet addr:');
 	if($pos!=-1) {
