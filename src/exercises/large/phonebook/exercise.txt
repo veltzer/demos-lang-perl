@@ -2,8 +2,21 @@
 	store a phone book in a file (phonebook.txt).
 	decide on the format.
 	Allow to search for a phone number according to name.
-	make it efficient.
-
-- phonebook exercise (cont)
+	make the searching efficient.
 	allow to add name/number combos to the phonebook.
+	allow to delete a name from the phonebook.
 	save changes to disk.
+
+The application should show a menu like this one:
+Menu...
+================
+1) Print the phonebook
+2) Search for a name
+3) Delete a name
+4) Add a name
+5) Replace a phone for a name
+6) Exit
+
+Technical notes:
+================
+use subroutines
