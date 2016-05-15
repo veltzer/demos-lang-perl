@@ -5,7 +5,8 @@
 This example shows the meaning of flusing.
 Flushing occurs when:
 - you explicitly call the flush function.
-- you print "\n"
+- you print "\n".
+- you set $| to 1.
 
 =cut
 

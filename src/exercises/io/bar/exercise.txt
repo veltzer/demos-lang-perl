@@ -1,0 +1,15 @@
+Create a progress bar on the command line.
+
+It should look like this:
+t=0 *
+t=1  *
+t=2   *
+
+
+It should move from side to side.
+
+Hints:
+Use sleep() to delay your program.
+Use flush() to flush output.
+Use "\r" (and not "\n") to return the cursor to the begining
+	of the line.
