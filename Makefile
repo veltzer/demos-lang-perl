@@ -3,6 +3,8 @@ include /usr/share/templar/make/Makefile
 ALL:=$(TEMPLAR_ALL)
 ALL_DEP:=$(TEMPLAR_ALL_DEP)
 
+all: $(ALL)
+
 .PHONY: check
 check:
 	grep -L "use strict" -r src/examples
