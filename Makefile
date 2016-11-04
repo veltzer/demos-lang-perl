@@ -3,15 +3,7 @@ include /usr/share/templar/make/Makefile
 ALL:=$(TEMPLAR_ALL)
 ALL_DEP:=$(TEMPLAR_ALL_DEP)
 
-ALL_DEP+=tools.stamp
-ALL+=tools.stamp
-
 all: $(ALL)
-
-tools.stamp: templardefs/deps.py
-	$(info doing [$@])
-	@templar_cmd install_deps
-	@make_helper touch-mkdir $@
 
 .PHONY: check
 check:
