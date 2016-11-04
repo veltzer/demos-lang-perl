@@ -1,6 +1,0 @@
----
-packages:
-        - name: libnet-github-perl
-        - name: libconfig-inifiles-perl
-        - name: libfile-homedir-perl
-        - name: perl-tk
