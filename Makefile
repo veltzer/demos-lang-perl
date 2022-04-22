@@ -1,5 +1,4 @@
 ALL:=
-ALL_DEP:=
 
 all: $(ALL)
 
