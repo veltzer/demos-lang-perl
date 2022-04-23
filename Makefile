@@ -1,6 +1,7 @@
 ALL:=
 
 all: $(ALL)
+	@true
 
 .PHONY: check
 check:
