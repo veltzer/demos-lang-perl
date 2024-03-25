@@ -58,6 +58,11 @@ clean:
 clean_hard:
 	$(Q)git clean -qffxd
 
+.PHONY: count
+count:
+	find src -name "*.pl" | wc -l
+	find out -name "*.lint" | wc -l
+
 ############
 # patterns #
 ############
