@@ -4,7 +4,7 @@
 # do dependency on the makefile itself?
 DO_ALLDEP:=1
 # do you want to lint perl files?
-DO_LINT:=0
+DO_LINT:=1
 # do you want to see the commands given?
 DO_MKDBG:=0
 
@@ -50,10 +50,19 @@ check:
 	@grep -L "=head" -r src/examples
 	@grep -L "=cut" -r src/examples
 
+.PHONY: clean
+clean:
+	$(Q)rm -f $(ALL)
+
+.PHONY: clean_hard
+clean_hard:
+	$(Q)git clean -qffxd
+
 ############
 # patterns #
 ############
 $(ALL_LINT): out/%.lint: %.pl
 	$(info doing [$@])
-	$(Q)perl -Mstrict -Mdiagnostics -cw $<
+	$(Q)pymakehelper only_print_on_error perl -Mstrict -Mdiagnostics -cw $<
+	$(Q)pymakehelper only_print_on_error perl -MO=Lint $<
 	$(Q)pymakehelper touch_mkdir $@
