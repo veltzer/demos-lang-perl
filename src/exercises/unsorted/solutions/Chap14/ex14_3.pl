@@ -9,7 +9,8 @@ while (my($record) = <>) {
 	$table{$acct} = [$name, $ssn, $bal];
 }
 
-for my($acctno) (sort keys(%table)) {
+my($acctno);
+for $acctno (sort keys(%table)) {
 	print($acctno, ": ",
 		&getname($acctno, \%table), " ",
 		&getssn( $acctno, \%table), " ",
