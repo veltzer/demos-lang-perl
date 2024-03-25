@@ -7,12 +7,13 @@
 use strict;
 use warnings;
 
-while ($line = <STDIN>) {
+my(%passwd);
+while (my($line) = <STDIN>) {
 	chomp;
-	($login, $name) = (split(":", $line))[0, 4];
+	my($login, $name) = (split(":", $line))[0, 4];
 	$passwd{$login} = $name;
 }
 
-while (($login, $name) = each %passwd) {
+while (my($login, $name) = each %passwd) {
 	print "Login: $login, Name: $name\n";
 }

@@ -9,6 +9,8 @@ This is an example of forward functions in perl.
 use strict;
 use warnings;
 
+sub two;
+
 sub one {
 	print "one\n";
 	two;

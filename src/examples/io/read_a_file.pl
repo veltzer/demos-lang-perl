@@ -9,7 +9,7 @@ use warnings;
 
 use IO::File;
 
-$fh = new IO::File("</etc/passwd") || die "Problem: $!\n";
+my($fh) = new IO::File("</etc/passwd") || die "Problem: $!\n";
 
 while (<$fh>) {
 	print;

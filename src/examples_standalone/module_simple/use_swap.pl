@@ -9,7 +9,7 @@ This code uses the package Swap to swap two integers.
 use strict;
 use warnings;
 
-use Swap;
+use Data::Swap;
 
 my($a)=5;
 my($b)=6;
