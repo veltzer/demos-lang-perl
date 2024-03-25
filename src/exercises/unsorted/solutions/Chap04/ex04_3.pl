@@ -3,7 +3,7 @@
 # Print a string in both upper and lower case
 
 print("Enter a string: ");
-$str = <STDIN>;
+my($str) = <STDIN>;
 
 # Note: don't need to remove newline character
 

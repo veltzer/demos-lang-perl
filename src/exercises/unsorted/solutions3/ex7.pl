@@ -4,9 +4,9 @@ if ($#ARGV<2) {
 	print "usgae: ex7-1.pl <block-size> <file-name> <record-number> [value-to-insert]\n";
 	exit;
 }
-($size, $filename, $record, $value) = @ARGV;
+my($size, $filename, $record, $value) = @ARGV;
 
-$loc = $record*$size;
+my($loc) = $record*$size;
 
 if (defined($value)) {
 	if (length($value)!=$size) {
