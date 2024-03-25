@@ -20,7 +20,8 @@ for (my($i) = 0; $i < 10; $i++) {
 }
 
 # Add 'em up
-foreach my($num) (@nums) {
+my($num);
+foreach $num (@nums) {
 	$count[$num]++;
 }
 print "\n";

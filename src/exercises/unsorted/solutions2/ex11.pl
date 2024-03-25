@@ -15,7 +15,8 @@ while(<IN>) {
 close (IN);
 
 #print %p;
-foreach my($login) (keys %p) {
+my($login);
+foreach $login (keys %p) {
 	my(@l) = @{$p{$login}};
 	print "$login\t@l\n";
 }

@@ -9,7 +9,8 @@ $string =~ tr/0-9//cd;
 my(@nums) = split(//, $string);
 
 my(@count);
-foreach my($num) (@nums) {
+my($num);
+foreach $num (@nums) {
 	$count[$num]++;
 }
 

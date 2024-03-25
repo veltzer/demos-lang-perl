@@ -13,7 +13,8 @@ print("max = $max\nmin = $min\nave = $ave\n");
 sub listproc {
 	my($mx, $mn, $av, $count);
 	$mx = $mn = $_[0];
-	foreach my($item) (@_) {
+	my($item);
+	foreach $item (@_) {
 		if ($item > $mx) {
 			$mx = $item;
 		}
