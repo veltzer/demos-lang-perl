@@ -2,13 +2,13 @@
 
 use DBI;
 
-my $dbh = DBI->connect('DBI:Oracle:payroll')
+my($dbh)= DBI->connect('DBI:Oracle:payroll')
 	or die "Couldn't connect to database: " . DBI->errstr;
-my $sth = $dbh->prepare('SELECT * FROM people WHERE lastname = ?')
+my($sth)= $dbh->prepare('SELECT * FROM people WHERE lastname = ?')
 	or die "Couldn't prepare statement: " . $dbh->errstr;
 
 print "Enter name> ";
-while ($lastname = <>) {
+while (my($lastname) = <>) {
 	# Read input from the user
 	my @data;
 	chomp $lastname;

@@ -4,7 +4,7 @@
 
 require rectangle;
 
-$square = rectangle->new(6);
+my($square) = rectangle->new(6);
 print("Area = ", $square->area(), "\n");
 
 $square->height(4);

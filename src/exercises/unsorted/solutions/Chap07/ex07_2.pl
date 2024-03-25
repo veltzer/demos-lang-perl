@@ -9,7 +9,7 @@ die("$ARGV[0] is not a directory\n") unless (-d $ARGV[0]);
 open(LS, "ls -a $ARGV[0] |");
 
 # Read the list of files and list permissions for the process owner
-while ($file = <LS>) {
+while (my($file) = <LS>) {
 	chomp($file);
 	print("$file\t");
 	print("read") if ( -r "$ARGV[0]/$file");

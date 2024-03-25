@@ -6,10 +6,10 @@
 $ARGV[0] = "." if (@ARGV == 0);
 
 # Open the directory
-die("Can't open directory $dir\n") unless opendir(DIR, $ARGV[0]);
+die("Can't open directory $ARGV[0]\n") unless opendir(DIR, $ARGV[0]);
 
 # Read the list of files
-while ($file = readdir(DIR)) {
+while (my($file) = readdir(DIR)) {
 	print("$file\n") unless (-d $file || $file !~ /^\./);
 }
 

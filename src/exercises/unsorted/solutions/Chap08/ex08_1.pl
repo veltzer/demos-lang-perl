@@ -3,9 +3,9 @@
 # Mimic the egrep utility
 
 #$pattern = $ARGV[0];
-$pattern = shift(@ARGV);
+my($pattern) = shift(@ARGV);
 
-while ($line = <>) {
+while (my($line) = <>) {
 	if ($line =~ /$pattern/) {
 		print($line);
 	}

@@ -2,10 +2,10 @@
 
 # Use a ":" as a name and language code separator
 
-foreach $name ("John:1", "Duncan:2", "Hector:3", "Rene:4", "Nobody:5") {
+foreach my($name) ("John:1", "Duncan:2", "Hector:3", "Rene:4", "Nobody:5") {
 
 	# Get the language code
-	$code = chop($name);
+	my($code) = chop($name);
 
 	# Throw away the separator
 	chop($name);

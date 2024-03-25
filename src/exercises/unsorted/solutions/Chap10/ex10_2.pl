@@ -2,12 +2,12 @@
 
 # Format multiple lines on as few lines as possible
 
-format OUTPUT =
-~~ ^<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-$string
-.
-
-@lines = <>;
-$string = join("", @lines);
-$~ = OUTPUT;
+my(@lines) = <>;
+my($string) = join("", @lines);
+# format OUTPUT =
+# ~~ ^<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# $string
+# .
+# 
+# $~ = OUTPUT;
 write;

@@ -13,6 +13,7 @@ seek(INFILE, 10*($ARGV[0] - 1), 0) ||
 	die("Unable to seek to record $ARGV[0]\n");
 
 # Read the record
+my($record);
 read(INFILE, $record, 10);
 
 # Print the record

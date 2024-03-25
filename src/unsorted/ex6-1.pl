@@ -1,8 +1,9 @@
 #!/usr/bin/perl -w
 
+my(%people);
 while (<STDIN>) {
 	chomp;
-	($name, $phone) = split(",");
+	my($name, $phone) = split(",");
 	$people{$name} = $phone;
 }
 

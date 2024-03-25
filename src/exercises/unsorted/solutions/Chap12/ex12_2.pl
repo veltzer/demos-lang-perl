@@ -6,11 +6,12 @@
 srand($$);
 
 # Run the simulation 3600 times
-for $count (1..3600) {
+my(@die);
+for my($count) (1..3600) {
 	$die[int(rand(6)) + int(rand(6)) + 2]++;
 }
 
 # Print the results
-for $count (2..12) {
+for my($count) (2..12) {
 	printf("%2d: %4d\n", $count, $die[$count]);
 }

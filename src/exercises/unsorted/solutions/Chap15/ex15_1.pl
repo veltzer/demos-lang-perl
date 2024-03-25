@@ -17,7 +17,7 @@ sub printstr {
 }
 
 package main;
-$str = join(" ", @ARGV);
+my($str) = join(" ", @ARGV);
 
 print("$str\n");
 print(&upper::printstr($str), "\n");

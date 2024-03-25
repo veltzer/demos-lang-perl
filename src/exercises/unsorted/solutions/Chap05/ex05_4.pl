@@ -4,9 +4,10 @@
 
 print("RPN Calculator\n");
 
+my(@stack);
 while (1) {
 	print("> ");
-	$in = <STDIN>;
+	my($in) = <STDIN>;
 	chop($in);
 	if ($in eq "*") {
 		push(@stack, pop(@stack) * pop(@stack));

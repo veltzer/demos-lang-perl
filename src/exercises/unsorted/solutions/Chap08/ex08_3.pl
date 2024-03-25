@@ -2,16 +2,17 @@
 
 # Strip numbers from a file and count the number of times each digit occurs
 
-@file = <>;
+my(@file) = <>;
 chomp(@file);
-$string = join("", @file);
+my($string) = join("", @file);
 $string =~ tr/0-9//cd;
-@nums = split(//, $string);
+my(@nums) = split(//, $string);
 
-foreach $num (@nums) {
+my(@count);
+foreach my($num) (@nums) {
 	$count[$num]++;
 }
 
-for ($num = 0; $num <= 9; $num++) {
+for (my($num) = 0; $num <= 9; $num++) {
 	print("$num: $count[$num]\n");
 }

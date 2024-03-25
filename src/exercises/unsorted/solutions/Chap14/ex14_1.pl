@@ -2,8 +2,8 @@
 
 # Use references to swap two scalars in a subroutine
 
-$x = 5;
-$y = 7;
+my($x) = 5;
+my($y) = 7;
 print("\$x = $x\n\$y = $y\n\n");
 
 print("Swapping...\n\n");

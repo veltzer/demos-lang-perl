@@ -3,12 +3,12 @@
 # Phone directory
 
 # Load the directory from standard input
-@input = <STDIN>;
+my(@input) = <STDIN>;
 chomp(@input);
 
 # Create the directory as a hash
-%phone = split(/,/, join(",", @input));
+my(%phone) = split(/,/, join(",", @input));
 
-foreach $name (sort(keys(%phone))) {
+foreach my($name) (sort(keys(%phone))) {
 	print("$name\t$phone{$name}\n");
 }

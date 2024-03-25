@@ -3,7 +3,7 @@
 
 die("Usage: $0 <dirname>\n") unless (@ARGV > 0);
 
-$depth = 0;
+my($depth) = 0;
 
 &removedir($ARGV[0]);
 

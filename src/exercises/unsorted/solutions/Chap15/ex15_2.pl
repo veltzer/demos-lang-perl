@@ -2,8 +2,8 @@
 
 # Perform arithmetic operations using the integer package
 
-$x = 7.83;
-$y = 5.25;
+my($x) = 7.83;
+my($y) = 5.25;
 
 print("\$x = ", $x, "\n");
 print("\$y = ", $y, "\n\n");
