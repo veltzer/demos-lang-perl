@@ -1,11 +1,12 @@
 #!/usr/bin/perl -w
 
+my(%hash);
 open PW,"< /etc/passwd";
 while (<PW>) {
 	chop;
-	@vals = split(":");
+	my(@vals) = split(":");
 	print "@vals\n";
-	$key = shift(@vals);
+	my($key) = shift(@vals);
 	$hash{$key}=\@vals;
 }
 

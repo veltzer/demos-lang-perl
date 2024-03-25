@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-$command = 1;
+my($command) = 1;
 
 while ($command>0) {
 	print "0) exit\n";
@@ -13,11 +13,11 @@ while ($command>0) {
 
 	if ($command==1) {
 		# OPTION 1
-		$val = <>;
+		my($val) = <>;
 		print "char value:".chr($val)."\n";
 	} elsif ($command==2) {
 		# OPTION 2
-		$string = <>;
+		my($string) = <>;
 		while (length($string)>0) {
 			print ord(substr($string,0,1))." ";
 			$string = substr($string,1,length($string)-1);
@@ -25,7 +25,7 @@ while ($command>0) {
 		print "\n";
 	} elsif ($command==3) {
 		# OPTION 3
-		for ($i=32;$i<128;$i++) {
+		for (my($i)=32;$i<128;$i++) {
 			print $i."\t".chr($i)."\t";
 		}
 		print "\n";

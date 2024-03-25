@@ -4,11 +4,11 @@
 
 # Get a number from the user
 print("Enter a positive integer (< 65536): ");
-$num = <STDIN>;
+my($num) = <STDIN>;
 chomp($num);
 
 # Create a mask
-$mask = 1 << 15;
+my($mask) = 1 << 15;
 
 # Loop through the bits from left to right
 while ($mask > 0) {

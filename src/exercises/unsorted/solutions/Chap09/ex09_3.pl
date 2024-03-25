@@ -8,6 +8,7 @@ BEGIN {
 	print("Program starting\n");
 }
 
+my($AUTOLOAD);
 AUTOLOAD {
 	die("$AUTOLOAD doesn\'t exist!\n");
 }

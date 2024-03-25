@@ -4,14 +4,15 @@
 
 # Get the temperature from the user
 print("Enter a positive integer: ");
-$temp = <STDIN>;
+my($temp) = <STDIN>;
 chomp($temp);
 
 # Get the conversion type from the user
 print("Convert to degrees F or C (F/C)? ");
-$type = <STDIN>;
+my($type) = <STDIN>;
 chomp($type);
 
+my($T);
 if ($type eq "F") {
 	$T = 9 * $temp / 5 + 32; # Test for Fahrenheit
 }

@@ -4,11 +4,11 @@
 
 # Get the first string
 print("Enter first string: ");
-$string1 = <STDIN>;
+my($string1) = <STDIN>;
 
 # Get the second string
 print("Enter second string: ");
-$string2 = <STDIN>;
+my($string2) = <STDIN>;
 
 # Test and print the strings in sorted order
 # Note: newline character left on the end of the strings

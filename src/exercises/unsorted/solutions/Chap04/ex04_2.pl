@@ -3,17 +3,18 @@
 # Convert an octal number to a decimal number
 
 print("Enter a number in octal notation: ");
-$num = <STDIN>;
+my($num) = <STDIN>;
 chomp($num);
 
 # Check to make sure it is an octal number
-$test = $num;
+my($test) = $num;
 while ($test ne "") {
-	$chr = chop($test);
+	my($chr) = chop($test);
 	die("Not octal number\n") if ($chr > 7);
 }
 
-$i = 0;
+my($i) = 0;
+my($dec);
 while ($num ne "") {
 	$dec += chop($num) * (8**$i++);
 }

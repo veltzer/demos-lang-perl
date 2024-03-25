@@ -4,11 +4,11 @@
 
 # Get floating point value from user
 print("Enter a floating point number with decimal: ");
-$num = <STDIN>;
+my($num) = <STDIN>;
 chomp($num);
 
 while ($num ne "") {
-	$chr = chop($num); # Chop right-most chars until
+	my($chr) = chop($num); # Chop right-most chars until
 	last if ($chr eq "."); # a decimal is found
 }
 

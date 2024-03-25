@@ -7,7 +7,7 @@ print("$ARGV[0]\n");
 &revstr($ARGV[0]);
 
 sub revstr {
-	local ($str) = ($_[0]);
+	my ($str) = ($_[0]);
 	if ($str eq "") {
 		print("\n");
 		return;

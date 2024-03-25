@@ -1,18 +1,21 @@
 #!/usr/bin/perl -w
 
+my($childs);
 $childs = shift @ARGV || 
 	die "usage: ex8.pl <childs_count>";
 $|=1;
 
+my($i);
+my(@pids);
 for ($i=0; $i<$childs; $i++) {
-	$pid = fork();
+	my($pid) = fork();
 	if ($pid>0) {
 		#parent
 		push(@pids,$pid);
 		next;
 	} else {
 		#child
-		$t = rand 20;
+		my($t) = rand 20;
 		print "child $i is going to sleep for $t secs\n";
 		srand;
 		sleep($t);
