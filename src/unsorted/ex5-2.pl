@@ -5,8 +5,8 @@ $counters[$i++] = 0 while ($i < 10);
 
 while (my($line) = <STDIN>) {
 	chomp $line;
-
-	foreach my($digit) (split("", $line)) {
+	my($digit);
+	foreach $digit (split("", $line)) {
 		$counters[$digit]++;
 	}
 }
