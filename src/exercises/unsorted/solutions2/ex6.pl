@@ -1,5 +1,5 @@
 #!/usr/bin/perl -w
-$p = shift @ARGV;
+my($p) = shift @ARGV;
 while (<>) { 
 	print if (/$p/); 
 }

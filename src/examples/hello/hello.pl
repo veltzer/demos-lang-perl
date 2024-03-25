@@ -1,5 +1,8 @@
 #!/usr/bin/perl -w
 
+use strict;
+use warnings;
+
 =head
 
 This is a most basic "Hello, World!" example in perl.
