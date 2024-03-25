@@ -3,4 +3,5 @@ packages=[
     "libconfig-inifiles-perl",
     "libfile-homedir-perl",
     "perl-tk",
+    "libb-lint-perl",
 ]
