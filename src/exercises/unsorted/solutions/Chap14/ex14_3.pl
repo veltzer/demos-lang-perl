@@ -2,13 +2,14 @@
 
 # Process data file using hash references
 
-while ($record = <>) {
+my(%table);
+while (my($record) = <>) {
 	chomp($record);
-	($acct, $name, $ssn, $bal) = split(/,\s+/, $record);
+	my($acct, $name, $ssn, $bal) = split(/,\s+/, $record);
 	$table{$acct} = [$name, $ssn, $bal];
 }
 
-for $acctno (sort keys(%table)) {
+for my($acctno) (sort keys(%table)) {
 	print($acctno, ": ",
 		&getname($acctno, \%table), " ",
 		&getssn( $acctno, \%table), " ",

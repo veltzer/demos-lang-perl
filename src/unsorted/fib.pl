@@ -1,12 +1,13 @@
 #!/usr/bin/perl
 
 print "Enter number of elements: ";
-chomp($num_els = <STDIN>);
+chomp(my($num_els) = <STDIN>);
 
-$num1 = 1;
+my($answer, $sum);
+my($num1) = 1;
 $answer .= "1 " if ($num_els > 0);
  
-$num2 = 1;
+my($num2) = 1;
 $answer .= "1 " if ($num_els > 1);
 
 $num_els -= 2;

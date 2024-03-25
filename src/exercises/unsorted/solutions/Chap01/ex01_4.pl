@@ -2,7 +2,7 @@
 
 # Read from standard input and write to standard output
 
-$line = <STDIN>;
+my($line) = <STDIN>;
 while ($line ne "") {
 	print($line);
 	$line = <STDIN>;

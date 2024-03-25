@@ -1,5 +1,6 @@
 #!/usr/bin/perl 
 
+my(%users);
 open(PASSWD, "/etc/passwd") || die "unable to open /etc/passwd: $!\n";
 while (<PASSWD>) {
 	chomp;

@@ -4,7 +4,7 @@
 
 require string;
 
-$str = "axesimogub";
+my($str) = "axesimogub";
 
 print("$str\n");
 

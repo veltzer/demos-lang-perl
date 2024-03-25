@@ -2,10 +2,11 @@
 
 # Sum three columns of numbers
 
-while ($line = <>) {
+my(@totals);
+while (my($line) = <>) {
 	chomp($line);
-	@cols = split(" ", $line);
-	for ($i = 0; $i < 3; $i++) {
+	my(@cols) = split(" ", $line);
+	for (my($i) = 0; $i < 3; $i++) {
 		$totals[$i] += $cols[$i];
 	}
 	printf("%7.2f %7.2f %7.2f\n", @cols);

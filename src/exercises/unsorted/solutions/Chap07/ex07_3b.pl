@@ -13,13 +13,13 @@ seek(CHGFILE, 10*($ARGV[0] - 1), 0) ||
 	die("Unable to seek to record $ARGV[0]\n");
 
 # Make sure the record is no longer than 10 characters
-@record = split(//, $ARGV[1]);
+my(@record) = split(//, $ARGV[1]);
 
 # If the record is shorter than 10 characters, pad it with blanks
 while (@record < 10) {
 	$record[@record] = " ";
 }
-$record = join("", @record[0..9]);
+my($record) = join("", @record[0..9]);
 
 # Replace the record
 print CHGFILE ($record);

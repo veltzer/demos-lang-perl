@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-($min, $max, $avg) = calc(@ARGV);
+my($min, $max, $avg) = calc(@ARGV);
 
 print "Min: $min, Max: $max, Avg: $avg\n";
 sub calc

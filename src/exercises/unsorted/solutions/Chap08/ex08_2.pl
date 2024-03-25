@@ -4,9 +4,11 @@
 # list of files
 
 # Get the word
-$word = shift(@ARGV);
+my($word) = shift(@ARGV);
 
-while ($line = <>) {
+my($lineno)=0;
+my($flag)=0;
+while (my($line) = <>) {
 	$lineno++;
 	if ($line =~ /$word/g) {
 		print("line $lineno: ", pos($line) - length($word) + 1);

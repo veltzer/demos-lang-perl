@@ -3,7 +3,7 @@
 # Print out a file in upper or lower case
 
 # Get the input
-@file = <STDIN>;
+my(@file) = <STDIN>;
 
 # Check for options
 if (@ARGV == 0) {
@@ -11,13 +11,13 @@ if (@ARGV == 0) {
 }
 elsif ($ARGV[0] eq "-l") {
 	print("found -l\n");
-	foreach $line (@file) {
+	foreach my($line) (@file) {
 		print("\L$line\E");
 	}
 }
 elsif ($ARGV[0] eq "-u") {
 	print("found -u\n");
-	foreach $line (@file) {
+	foreach my($line) (@file) {
 		print("\U$line\E");
 	}
 }

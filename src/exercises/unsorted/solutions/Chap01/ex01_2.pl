@@ -3,7 +3,7 @@
 # Prompt for information, then print mailing label
 
 print("Name: ");
-$name = <STDIN>;
+my($name) = <STDIN>;
 chomp($name);
 
 if ($name eq "") {
@@ -11,7 +11,7 @@ if ($name eq "") {
 }
 
 print("Address: ");
-$addr = <STDIN>;
+my($addr) = <STDIN>;
 chomp($addr);
 
 if ($addr eq "") {
@@ -19,7 +19,7 @@ if ($addr eq "") {
 }
 
 print("City, State and Zip Code: ");
-$CSZ = <STDIN>;
+my($CSZ) = <STDIN>;
 chomp($CSZ);
 
 if ($CSZ eq "") {

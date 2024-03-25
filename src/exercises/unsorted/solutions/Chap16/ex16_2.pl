@@ -7,12 +7,12 @@ require rectangle2;
 print("Number: ", rectangle2->getcount(), "\n\n");
 
 print("Creating square...\n");
-$square = rectangle2->new(6);
+my($square) = rectangle2->new(6);
 print("Area = ", $square->area(), "\n");
 print("Number: ", rectangle2->getcount(), "\n\n");
 
 print("Creating rectangle...\n");
-$rect = rectangle2->new(4, 8);
+my($rect) = rectangle2->new(4, 8);
 print("Area = ", $rect->area(), "\n");
 print("Number: ", rectangle2->getcount(), "\n\n");
 

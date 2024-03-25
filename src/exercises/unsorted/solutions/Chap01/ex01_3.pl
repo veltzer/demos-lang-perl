@@ -2,22 +2,22 @@
 
 # Read address label information from a file
 
-$last = <STDIN>;
+my($last) = <STDIN>;
 chomp($last);
 
-$first = <STDIN>;
+my($first) = <STDIN>;
 chomp($first);
 
-$addr = <STDIN>;
+my($addr) = <STDIN>;
 chomp($addr);
 
-$city = <STDIN>;
+my($city) = <STDIN>;
 chomp($city);
 
-$state = <STDIN>;
+my($state) = <STDIN>;
 chomp($state);
 
-$zip = <STDIN>;
+my($zip) = <STDIN>;
 chomp($zip);
 
 print("$first $last\n");

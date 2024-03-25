@@ -7,7 +7,7 @@ print(" 3 - Spanish\n");
 print(" 4 - French\n\n");
 print("Your choice (1-4)? ");
 
-$choice = <STDIN>;
+my($choice) = <STDIN>;
 chop($choice);
 
 if ($choice == 1) {print("\nHello\n");}

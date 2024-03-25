@@ -2,8 +2,8 @@
 
 # Multiply two 2x2 arrays together in a subroutine
 
-$arr1 = [[1, 2], [3, 4]];
-$arr2 = [[4, 3], [2, 1]];
+my($arr1) = [[1, 2], [3, 4]];
+my($arr2) = [[4, 3], [2, 1]];
 
 &mult2x2($arr1, $arr2);
 

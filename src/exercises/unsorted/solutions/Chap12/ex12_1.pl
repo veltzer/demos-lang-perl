@@ -3,7 +3,7 @@
 # Parent-child processes
 
 $SIG{"TERM"} = \&TERM_handler; # Register signal handler # Register signal handler
-if ($pid = fork()) {
+if (my($pid) = fork()) {
 	# Parent process
 	sleep(3); # Sleep 3 seconds # Wait 3 seconds
 	kill("TERM", $pid); # Send the TERM signal to the child process # Send termination signal

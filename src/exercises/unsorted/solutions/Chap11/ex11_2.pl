@@ -3,8 +3,8 @@
 
 $ARGV[0] = "." unless (@ARGV > 0);
 
-$space = "";
-$depth = 0;
+my($space) = "";
+my($depth) = 0;
 
 &listdir($ARGV[0]);
 
