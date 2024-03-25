@@ -21,7 +21,7 @@ for(my($i)=1;$i<@ARGV;$i++) {
 	if($debug) {
 		print 'filename is [$filename]\n';
 	}
-	open(FILE,$filename) || die 'Can't open file [$filename]: $!';
+	open(FILE,$filename) || die 'Cant open file [$filename]: $!';
 	my($line);
 	while($line=<FILE>) {
 		if($line=~$pattern) {

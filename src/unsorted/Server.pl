@@ -2,16 +2,17 @@
 
 use IO::Socket;
 
-$sock = new IO::Socket::INET (	LocalHost => "localhost",
-				LocalPort => 1200,
-				Proto => 'tcp',
-				Listen => 5,
-				Reuse => 1
+my($sock) = new IO::Socket::INET (
+	LocalHost => "localhost",
+	LocalPort => 1200,
+	Proto => 'tcp',
+	Listen => 5,
+	Reuse => 1
 );
 
 die "create/bind error: $!\n" unless $sock;
 
-$client = $sock->accept();
+my($client) = $sock->accept();
 die "accept error: $!\n" unless $client;
 
 print "Client has connected!\n";

@@ -7,7 +7,7 @@
 use strict;
 use warnings;
 
-while ($line=<STDIN>) {
+while (my($line)=<STDIN>) {
 	chomp($line);
 	print $line."\n";
 }

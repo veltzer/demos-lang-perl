@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
 
-$mat1 = [[1, 2], [3, 4]];
-$mat2 = [[5, 6], [7, 8]];
+my($mat1) = [[1, 2], [3, 4]];
+my($mat2) = [[5, 6], [7, 8]];
 
-$mat3 = add_mat($mat1, $mat2);
+my($mat3) = add_mat($mat1, $mat2);
 
 print_mat($mat3);
 

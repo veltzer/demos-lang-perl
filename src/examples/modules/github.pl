@@ -17,8 +17,8 @@ use File::HomeDir;
 # code
 
 my($cfg)=Config::IniFiles->new( -file => File::HomeDir->my_home.'/.github.ini' ) or die('unable to access ini file');
-$param_login=$cfg->val('github', 'login');
-$param_pass=$cfg->val('github', 'pass');
+my($param_login)=$cfg->val('github', 'login');
+my($param_pass)=$cfg->val('github', 'pass');
 
 my($github)=Net::GitHub->new(
 	login => $param_login,

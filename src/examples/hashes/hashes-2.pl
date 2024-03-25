@@ -7,13 +7,14 @@
 use strict;
 use warnings;
 
-while ($line = <STDIN>) {
+my(%words);
+while (my($line) = <STDIN>) {
 	chomp $line;
-	foreach $word (split(" ", $line)) {
+	foreach my($word) (split(" ", $line)) {
 		$words{$word}++;
 	}
 }
 
-while (($word, $count) = each %words) {
+while (my($word, $count) = each %words) {
 	print "$word: $count\n";
 }

@@ -9,7 +9,7 @@ This is an example of creating a complex data structure in perl
 use strict;
 use warnings;
 
-%company = (
+my(%company) = (
 	SALES => {
 		VP => 'McClure',
 		TEAM => [
