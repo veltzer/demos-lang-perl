@@ -1,10 +1,11 @@
 #!/usr/bin/perl -w -d
 
-$a = 8;
-$a = 9;
+my($a )= 8;
+my($a) = 9;
 
-$matrix = [[1, 2], [4, 5]];
+my($matrix) = [[1, 2], [4, 5]];
 
+my(%people);
 $people{"Shay"} = {
 	"Name" => "Shay",
 	"Age" => "24",

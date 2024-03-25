@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
-while ($line = <STDIN>) {
+my(@stack);
+while (my($line) = <STDIN>) {
 	chomp $line;
 	if ($line eq "+") {
 		push(@stack, pop(@stack) + pop(@stack));

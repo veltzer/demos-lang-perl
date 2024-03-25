@@ -68,6 +68,6 @@ count:
 ############
 $(ALL_LINT): out/%.lint: %.pl
 	$(info doing [$@])
-	$(Q)pymakehelper only_print_on_error perl -Mstrict -Mdiagnostics -cw $<
-	$(Q)pymakehelper only_print_on_error perl -MO=Lint $<
+	$(Q)pymakehelper only_print_on_error perl -I src/unsorted -Mstrict -Mdiagnostics -cw $<
+	$(Q)pymakehelper only_print_on_error perl -I src/unsorted -MO=Lint $<
 	$(Q)pymakehelper touch_mkdir $@
