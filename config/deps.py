@@ -5,4 +5,5 @@ packages=[
     "libfile-homedir-perl",
     "perl-tk",
     "libb-lint-perl",
+    "libdbi-perl",
 ]
