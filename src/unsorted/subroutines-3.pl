@@ -4,7 +4,7 @@
 # as it reverses a string and not the array sent to it
 # see the next answer for that
 
-$str = shift;
+my($str) = shift;
 
 print reverse_str($str), "\n";
 

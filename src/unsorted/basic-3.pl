@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
-while ($line = <STDIN>) {
+my($data);
+while (my($line) = <STDIN>) {
 	chomp $line;
 	$data .= $line;
 }

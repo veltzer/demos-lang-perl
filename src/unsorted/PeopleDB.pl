@@ -2,5 +2,5 @@
 
 use PeopleDB;
 
-$db = PeopleDB::load_db("peopledb.data");
+my($db) = PeopleDB::load_db("peopledb.data");
 PeopleDB::print_db($db);

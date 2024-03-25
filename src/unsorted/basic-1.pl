@@ -1,5 +1,6 @@
 #!/usr/bin/perl -w
 
+my($login);
 do
 {
 	print "Enter login> ";
@@ -8,11 +9,11 @@ do
 } while ($login eq "");
 
 print "Enter full name> ";
-$name = <STDIN>;
+my($name) = <STDIN>;
 chomp $name;
 
 print "Enter password> ";
-$password = <STDIN>;
+my($password) = <STDIN>;
 chomp $password;
 
 print "Login: [$login]\n";

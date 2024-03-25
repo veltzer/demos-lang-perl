@@ -1,9 +1,9 @@
 #!/usr/bin/perl -w
 
-$line = <STDIN>;
+my($line) = <STDIN>;
 chomp $line;
 
-for ($i = length($line) - 1; $i >= 0; $i--) {
+for (my($i) = length($line) - 1; $i >= 0; $i--) {
 	print substr($line, $i, 1);
 }
 print "\n";
