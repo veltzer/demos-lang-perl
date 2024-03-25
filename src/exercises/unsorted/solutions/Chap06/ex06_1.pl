@@ -9,6 +9,7 @@ chomp(@input);
 # Create the directory as a hash
 my(%phone) = split(/,/, join(",", @input));
 
-foreach my($name) (sort(keys(%phone))) {
+my($name);
+foreach $name (sort(keys(%phone))) {
 	print("$name\t$phone{$name}\n");
 }

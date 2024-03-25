@@ -8,14 +8,16 @@ chomp(@input);
 
 # Process the list
 my(%hours, %periods);
-foreach my($line) (@input){
+my($line);
+foreach $line (@input){
 	my($empno, $hrs) = split(/ /, $line);
 	$hours{$empno} += $hrs;
 	$periods{$empno}++;
 }
 
 # Print report
-foreach my($empno) (sort(keys(%hours))) {
+my($empno);
+foreach $empno (sort(keys(%hours))) {
 	unless ($empno eq "") {
 	print("$empno\t$periods{$empno}\t$hours{$empno}\t",
 		$hours{$empno}/$periods{$empno}, "\n");

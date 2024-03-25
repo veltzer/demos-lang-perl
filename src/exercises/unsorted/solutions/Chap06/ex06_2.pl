@@ -10,12 +10,13 @@ my(@words) = split(/ /, join(" ", @input));
 
 # Count each word
 my(%count);
-foreach my($word) (@words) {
+my($word);
+foreach $word (@words) {
 	$count{$word}++;
 }
 
 # Print the list in sorted order
 print "\n";
-foreach my($word) (sort(keys(%count))) {
+foreach $word (sort(keys(%count))) {
 	print("$word\t\t$count{$word}\n");
 }

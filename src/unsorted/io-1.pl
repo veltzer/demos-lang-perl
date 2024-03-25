@@ -2,7 +2,8 @@
 
 # Without <>
 if (@ARGV > 0) {
-	foreach my($file) (@ARGV) {
+	my($file);
+	foreach $file (@ARGV) {
 		open(FILE, $file) || die "can't open $file: $!\n";
 		while (<FILE>) {
 			print length > 5 ? substr($_, 0, 5) . "\n" : $_;

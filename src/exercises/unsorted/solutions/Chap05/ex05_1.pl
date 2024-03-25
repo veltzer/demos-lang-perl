@@ -11,13 +11,15 @@ if (@ARGV == 0) {
 }
 elsif ($ARGV[0] eq "-l") {
 	print("found -l\n");
-	foreach my($line) (@file) {
+	my($line);
+	foreach $line (@file) {
 		print("\L$line\E");
 	}
 }
 elsif ($ARGV[0] eq "-u") {
 	print("found -u\n");
-	foreach my($line) (@file) {
+	my($line);
+	foreach $line (@file) {
 		print("\U$line\E");
 	}
 }
