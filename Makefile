@@ -12,7 +12,7 @@ DO_MKDBG:=0
 # code #
 ########
 ALL:=
-ALL_PL:=$(shell find src -name "*.pl")
+ALL_PL:=$(shell find src -type f -and -name "*.pl")
 ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PL))))
 
 ifeq ($(DO_ALLDEP),1)
