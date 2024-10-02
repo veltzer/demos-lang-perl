@@ -1,12 +1,12 @@
 ##############
 # parameters #
 ##############
+# do you want to see the commands given?
+DO_MKDBG:=0
 # do dependency on the makefile itself?
 DO_ALLDEP:=1
 # do you want to lint perl files?
 DO_LINT:=1
-# do you want to see the commands given?
-DO_MKDBG:=0
 
 ########
 # code #
@@ -14,10 +14,6 @@ DO_MKDBG:=0
 ALL:=
 ALL_PL:=$(shell find src -type f -and -name "*.pl")
 ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PL))))
-
-ifeq ($(DO_ALLDEP),1)
-.EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
-endif # DO_ALLDEP
 
 ifeq ($(DO_LINT),1)
 ALL+=$(ALL_LINT)
@@ -71,3 +67,10 @@ $(ALL_LINT): out/%.lint: %.pl
 	$(Q)pymakehelper only_print_on_error perl -I src/unsorted -I src/examples_standalone/oop_basic -Mstrict -Mdiagnostics -cw $<
 	$(Q)pymakehelper only_print_on_error perl -I src/unsorted -I src/examples_standalone/oop_basic -MO=Lint $<
 	$(Q)pymakehelper touch_mkdir $@
+
+##########
+# alldep #
+##########
+ifeq ($(DO_ALLDEP),1)
+.EXTRA_PREREQS+=$(foreach mk, ${MAKEFILE_LIST},$(abspath ${mk}))
+endif # DO_ALLDEP
