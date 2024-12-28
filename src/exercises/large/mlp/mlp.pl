@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-if (@ARGV<1) { die "usage: mlp <conf> [file [...]]\n"; }
+if ($#ARGV<1) { die "usage: mlp <conf> [file [...]]\n"; }
 
 my $conf = shift(@ARGV);
 open (CONF, "<$conf") || die "cannot open configuration file ($conf): $!\n";
