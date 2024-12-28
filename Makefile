@@ -64,12 +64,9 @@ count:
 ############
 $(ALL_LINT): out/%.lint: %.pl scripts/wrapper_lint.py
 	$(info doing [$@])
-	$(Q)scripts/wrapper_lint.py $<
+	$(Q)perl -I src/unsorted -I src/examples_standalone/oop_basic -Mstrict -Mdiagnostics -cw $<
 	$(Q)pymakehelper touch_mkdir $@
-# $(Q)perl -I src/unsorted -I src/examples_standalone/oop_basic -Mstrict -Mdiagnostics -cw $<
-
-# $(Q)pymakehelper error_on_print perl -I src/unsorted -I src/examples_standalone/oop_basic -MO=Lint $<
-# $(Q)pymakehelper error_on_print perl -I src/unsorted -I src/examples_standalone/oop_basic -Mstrict -Mdiagnostics -cw $<
+# $(Q)scripts/wrapper_lint.py $<
 
 ##########
 # alldep #

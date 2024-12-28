@@ -9,7 +9,7 @@ my %phonebook;
 
 sub read_phonebook {
 	my $fh;
-	open($fh, "< phonebook.txt") || die("problem with open [$!]");
+	open($fh,"<","phonebook.txt") || die("problem with open [$!]");
 	while(<$fh>) {
 		chomp;
 		my($name,$phone)=split ',';
@@ -20,7 +20,7 @@ sub read_phonebook {
 
 sub write_phonebook {
 	my $fh;
-	open($fh, "> phonebook.txt") || die("problem with open [$!]");
+	open($fh,">","phonebook.txt") || die("problem with open [$!]");
 	while(my($name,$phone)=each(%phonebook)) {
 		print $fh "$name,$phone\n";
 	}
