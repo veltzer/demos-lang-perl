@@ -5,10 +5,9 @@ use warnings;
 
 my @numbers=<STDIN>;
 
-my $number;
 my $sigma_x=0.0;
 my $sigma_x2=0.0;
-foreach $number (@numbers) {
+foreach my($number) (@numbers) {
 	chomp($number);
 	$number+=0.0;
 	$sigma_x+=$number;

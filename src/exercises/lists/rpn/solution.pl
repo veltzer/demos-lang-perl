@@ -8,12 +8,10 @@ This is a solution to the RPN calculator exercise.
 
 use strict;
 use warnings;
+use autodie;
 
 my @array;
-my $over=0;
-
-my $line;
-while(!$over && ($line=<>)) {
+while(defined(my $line=readline(STDIN))) {
 	chomp($line);
 	if($line eq '+') {
 		my($x)=pop(@array);
@@ -40,7 +38,7 @@ while(!$over && ($line=<>)) {
 		next;
 	}
 	if($line eq '=') {
-		$over=1;
+		last;
 		next;
 	}
 	push(@array,$line);
