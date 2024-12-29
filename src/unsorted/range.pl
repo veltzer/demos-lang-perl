@@ -12,9 +12,9 @@ use warnings;
 
 my($file,$off,$num)=@ARGV;
 
-open(FILE,$file) || die("huh!?!");
-seek(FILE,$off,0);
+open($fh, "<", $file) || die("huh!?!");
+seek($fh,$off,0);
 my($s);
-read(FILE,$s,$num,0);
-close(FILE) || die("duh!?!");
+read($fh,$s,$num,0);
+close($fh) || die("duh!?!");
 print $s."\n";

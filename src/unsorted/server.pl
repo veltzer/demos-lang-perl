@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 use IO::Socket::INET;
 
 my($server) = IO::Socket::INET->new(LocalPort => "80",
