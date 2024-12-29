@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This script swap even and odd lines in STDIN and prints
 them out to STDOUT in a way appropriate to be used

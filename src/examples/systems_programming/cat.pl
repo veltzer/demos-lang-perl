@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 Example of how to implemtn the cat(1) utility in perl using the <> (diamond)
 operator.
