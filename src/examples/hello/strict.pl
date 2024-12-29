@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This example shows how to use perl in real life.
 With -w, 'use strict' and 'use warnings' you get much better error handling.

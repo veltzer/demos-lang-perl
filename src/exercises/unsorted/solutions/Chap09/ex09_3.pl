@@ -5,7 +5,7 @@
 &xyz; # Subroutine doesn't exist
 
 BEGIN {
-	print("Program starting\n");
+	# print("Program starting\n");
 }
 
 my($AUTOLOAD);

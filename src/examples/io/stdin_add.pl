@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This example shows how to input strings from STDIN.
 

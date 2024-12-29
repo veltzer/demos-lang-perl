@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This program copies to the screen any input given to it, both STDIN
 and command line.

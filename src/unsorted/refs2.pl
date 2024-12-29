@@ -1,7 +1,4 @@
-#!/usr/bin/perl -w -d
-
-my($a )= 8;
-my($a) = 9;
+#!/usr/bin/perl
 
 my($matrix) = [[1, 2], [4, 5]];
 

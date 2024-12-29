@@ -33,7 +33,7 @@ def main():
         if line==f"{sys.argv[1]} source OK":
             continue
         # this is a warning or error
-        # errors = True
+        errors = True
         print(f"{line}")
     for line in p.stderr:
         line = line.decode().rstrip()
