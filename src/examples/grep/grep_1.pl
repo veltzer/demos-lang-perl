@@ -21,9 +21,8 @@ for(my($i)=1;$i<@ARGV;$i++) {
 	if($debug) {
 		print 'filename is [$filename]\n';
 	}
-	open(FILE,$filename) || die 'Cant open file [$filename]: $!';
-	my($line);
-	while($line=<FILE>) {
+	open($fh, "<", $filename) || die 'Cant open file [$filename]: $!';
+	while(my $line=<$fh>) {
 		if($line=~$pattern) {
 			if($print_filename) {
 				print $filename.': ';
@@ -31,5 +30,5 @@ for(my($i)=1;$i<@ARGV;$i++) {
 			print $line;
 		}
 	}
-	close(FILE) || die('unable to close file [$filename]: $!');
+	close($fh) || die('unable to close file [$filename]: $!');
 }

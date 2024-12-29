@@ -10,8 +10,7 @@ use warnings;
 my(%words);
 while (my($line) = <STDIN>) {
 	chomp $line;
-	my($word);
-	foreach $word (split(" ", $line)) {
+	foreach my $word (split(" ", $line)) {
 		$words{$word}++;
 	}
 }

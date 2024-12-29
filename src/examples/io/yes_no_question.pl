@@ -14,7 +14,7 @@ since otherwise it will attempt to read more than one line...
 use strict;
 use warnings;
 
-sub show_yes_no_dialog($) {
+sub show_yes_no_dialog {
 	my($question)=$_[0];
 	my($stop)=0;
 	my($result);

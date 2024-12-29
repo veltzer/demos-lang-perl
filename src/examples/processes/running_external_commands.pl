@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+use strict;
 use warnings;
 
 my $ls_output = `ls /etc | wc -l`;

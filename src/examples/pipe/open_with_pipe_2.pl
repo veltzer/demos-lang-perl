@@ -2,10 +2,9 @@
 
 use strict;
 use warnings;
-use diagnostics;
 
 my $fh;
-open($fh, 'ls -l /etc | wc -l |') || die("problem with open [$!]");
+open($fh, "|", 'ls -l /etc | wc -l |') || die("problem with open [$!]");
 
 my @lines=<$fh>;
 chomp(@lines);
