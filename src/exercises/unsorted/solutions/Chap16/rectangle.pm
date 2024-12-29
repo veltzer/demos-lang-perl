@@ -1,5 +1,11 @@
 package rectangle;
-use strict;
+
+use strict
+use warnings;
+
+=pod
+
+=cut
 
 # Constructor
 sub new {

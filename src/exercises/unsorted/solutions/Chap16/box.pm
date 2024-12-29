@@ -1,5 +1,12 @@
 package box;
 
+=pod
+
+=cut
+
+use strict;
+use warnings;
+
 require rectangle;
 @ISA = (rectangle);
 

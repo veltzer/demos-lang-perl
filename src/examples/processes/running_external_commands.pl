@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my $ls_output = `ls /etc | wc -l`;
 chomp($ls_output);
 print "ls_output is $ls_output\n";

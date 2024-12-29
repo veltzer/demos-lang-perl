@@ -1,5 +1,9 @@
 # Exercise 3.1 - Select a language in which to be greeted
 
+=pod
+
+=cut
+
 use strict;
 use warnings;
 

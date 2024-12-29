@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my @numbers=<STDIN>;
 
 my $sigma_x=0.0;

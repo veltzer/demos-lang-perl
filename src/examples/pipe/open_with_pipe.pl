@@ -4,6 +4,10 @@ use strict;
 use warnings;
 use diagnostics;
 
+=pod
+
+=cut
+
 my $fh;
 open($fh, "|-", "bc") || die("problem with open [$!]");
 

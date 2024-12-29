@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my $a=1;
 my $b=2;
 

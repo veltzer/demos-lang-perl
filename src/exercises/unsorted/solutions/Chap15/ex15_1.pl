@@ -1,5 +1,9 @@
 # Exercise 15.1
 
+=pod
+
+=cut
+
 use strict;
 use warnings;
 

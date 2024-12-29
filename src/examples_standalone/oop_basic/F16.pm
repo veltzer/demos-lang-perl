@@ -1,12 +1,19 @@
 package F16;
 
-@ISA = (Plane);
+use strict;
+use warnings;
+
+=pod
+
+=cut
+
+my @ISA = ("Plane");
 
 sub new
 {
 	my ($pkg, $name, $fuel, $missiles) = @_;
 
-	$this = $pkg->SUPER::new($name, $fuel);
+	my $this = $pkg->SUPER::new($name, $fuel);
 	print "REF2:", ref($this), "\n";
 	$this->{"missiles"} = $missiles;
 	return $this;
@@ -14,12 +21,14 @@ sub new
 
 sub fuel
 {
-	$this = shift;
+	my $this = shift;
 	print "F16 can't fuel...\n";
 }
 
 sub missiles
 {
-	$this = shift;
+	my $this = shift;
 	@_ ? $this->{"missiles"} = shift : $this->{"missiles"};
 }
+
+1;

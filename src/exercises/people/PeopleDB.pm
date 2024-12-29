@@ -1,5 +1,12 @@
 package PeopleDB;
 
+=pod
+
+=cut
+
+use strict;
+use warnings;
+
 sub load_db {
 	my $file = shift;
 	my %peopleDB;
@@ -20,7 +27,7 @@ sub load_db {
 
 	# Pass a second time to replace the IDs with references
 
-	foreach $ID (keys %peopleDB) {
+	foreach my $ID (keys %peopleDB) {
 		# Resolve the spouse
 		$peopleDB{$ID}{SPOUSE} = $peopleDB{ $peopleDB{$ID}{SPOUSE} };
 		# Resolve the kids
