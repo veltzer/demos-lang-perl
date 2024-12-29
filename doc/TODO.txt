@@ -1,3 +1,5 @@
+- pass linting with -MO=Lint
+	do this by lighting the flag in the Makefile
 - do perl regexp examples.
 	simple and complex ones.
 	take some from the slides.
