@@ -1,5 +1,8 @@
 # Exercise 12.5
 
+use strict;
+use warnings;
+
 # List date and time
 
 my(@month) = qw(January February March April May June July August September October November December);

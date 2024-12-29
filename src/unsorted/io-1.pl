@@ -5,13 +5,12 @@ use warnings;
 
 # Without <>
 if (@ARGV > 0) {
-	my($file);
-	foreach $file (@ARGV) {
-		open(FILE, $file) || die "can't open $file: $!\n";
-		while (<FILE>) {
+	foreach my $file (@ARGV) {
+		open($fh, "<", $file) || die "can't open $file: $!\n";
+		while (<$fh>) {
 			print length > 5 ? substr($_, 0, 5) . "\n" : $_;
 		}
-		close FILE;
+		close $fh;
 	}
 } else {
 	while (<STDIN>) {

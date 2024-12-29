@@ -1,5 +1,8 @@
 # Exercise 16.1
 
+use strict;
+use warnings;
+
 # Implement and test a rectangle class
 
 require rectangle;

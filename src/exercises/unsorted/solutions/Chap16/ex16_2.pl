@@ -1,5 +1,8 @@
 # Exercise 16.2
 
+use strict;
+use warnings;
+
 # Implement and test a rectangle class with a class data member
 
 require rectangle2;

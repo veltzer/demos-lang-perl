@@ -1,5 +1,8 @@
 # Exercise 10.3
 
+use strict;
+use warnings;
+
 # Sum three columns of numbers
 
 my(@totals);

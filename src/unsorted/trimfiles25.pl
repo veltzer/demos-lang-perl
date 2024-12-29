@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This script trims all lines in files given to it to 5 characters 
 
@@ -20,19 +20,16 @@ while($line=<>) {
 =cut
 
 if(@ARGV>0) {
-	my($file);
-	foreach $file (@ARGV) {
-		open(FILE,$file) || die("huh!?!");
-		my($line);
-		while($line=<FILE>) {
+	foreach my $file (@ARGV) {
+		open($fh, "<", $file) || die("huh!?!");
+		while(my $line=<$fh>) {
 			chomp($line);
 			print substr($line,0,5)."\n";
 		}
-		close(FILE) || die("duh!?!");
+		close($fh) || die("duh!?!");
 	}
 } else {
-	my($line);
-	while($line=<STDIN>) {
+	while(my $line=<STDIN>) {
 		chomp($line);
 		print substr($line,0,5)."\n";
 	}
