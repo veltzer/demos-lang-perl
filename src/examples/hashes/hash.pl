@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This script stores all user names and their shells in a hash
 table and prints it out

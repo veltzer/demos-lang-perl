@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is a demo of the next statement in perl.
 

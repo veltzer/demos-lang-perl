@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This script explores what happens when you change
 a hash while iterating it.

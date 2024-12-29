@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 Another example of closure in perl.
 This is actually a replacement for object oriented programming.

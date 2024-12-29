@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 Example of how to use a third party module, in this case the GitHub module.
 

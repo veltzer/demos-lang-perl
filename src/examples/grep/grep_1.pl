@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is a general script to grep using perl to overcome some of the deficiencies
 of grep(1) grepping.
@@ -21,7 +21,7 @@ for(my($i)=1;$i<@ARGV;$i++) {
 	if($debug) {
 		print 'filename is [$filename]\n';
 	}
-	open($fh, "<", $filename) || die 'Cant open file [$filename]: $!';
+	open(my $fh, "<", $filename) || die 'Cant open file [$filename]: $!';
 	while(my $line=<$fh>) {
 		if($line=~$pattern) {
 			if($print_filename) {

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is a demo of perl's built-in 'time' function.
 Remember that it only returns seconds since the epoch so it's

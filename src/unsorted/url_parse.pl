@@ -2,7 +2,7 @@
 
 use warnings;
 
-=head
+=pod
 
 This script parses a url
 

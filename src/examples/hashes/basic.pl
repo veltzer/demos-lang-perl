@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 A demo of a simple hash in perl.
 You can see both initialisation and iteration in this example.
