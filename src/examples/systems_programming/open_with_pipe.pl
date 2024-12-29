@@ -18,18 +18,8 @@ the two pipes involved on our own.
 use strict;
 use warnings;
 
-open(IN, 'ls |') || die("unable to open [$!]");
-my($line);
-while($line=<IN>) {
-	chomp($line);
-	print "got [$line]\n";
-}
-close(IN) || die("unable to close [$!]");
-
-print "============================\n";
-
 my $fh;
-open($fh, 'ls |') || die("unable to open [$!]");
+open($fh, "|", "ls") || die("unable to open [$!]");
 while($line=<$fh>) {
 	chomp($line);
 	print "got [$line]\n";
@@ -37,7 +27,7 @@ while($line=<$fh>) {
 close($fh) || die("unable to close [$!]");
 
 print "============================\n";
-open($fh, '| bc') || die("unable to open [$!]");
+open($fh, "|", "bc") || die("unable to open [$!]");
 print $fh "2+2\n";
 print $fh "3+3\n";
 close($fh) || die("unable to close [$!]");

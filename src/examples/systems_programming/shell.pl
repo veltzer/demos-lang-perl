@@ -11,5 +11,5 @@ use strict;
 use warnings;
 
 while (<>) {
-	print eval."\n";
+	print eval."\n";  ## no critic
 }

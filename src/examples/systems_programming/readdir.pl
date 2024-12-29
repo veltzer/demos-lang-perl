@@ -10,9 +10,8 @@ use strict;
 use warnings;
 
 my($dir)=".";
-opendir(DIR,$dir) || die("error in opendir [$!]");
-my($file);
-while($file=readdir(DIR)) {
+opendir($fd, "<", $dir) || die("error in opendir [$!]");
+while(my $file=readdir($fd)) {
 	print $file."\n";
 }
-closedir(DIR) || die("error in closedir [$!]");
+closedir($fd) || die("error in closedir [$!]");

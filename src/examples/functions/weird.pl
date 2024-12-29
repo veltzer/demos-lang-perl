@@ -27,15 +27,14 @@ sub add3 {
 	return $a+$b;
 }
 
-sub add4($$) {
+sub add4($$) {  ## no critic
 	my ($a, $b)=@_;
 	return $a+$b;
 }
 
 sub mean {
 	my $sum=0;
-	my $num;
-	foreach $num (@_) {
+	foreach my $num (@_) {
 		$sum+=$num;
 	}
 	return $sum/scalar(@_);
@@ -56,7 +55,7 @@ sub what_does_this_return {
 	if ($a%2 == 0) {
 		return "hello";
 	}
-	return undef;
+	return undef; ## no critic
 }
 
 my $a = 2;
