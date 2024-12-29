@@ -1,5 +1,8 @@
 # Exercise 8.1
 
+use strict;
+use warnings;
+
 # Mimic the egrep utility
 
 #$pattern = $ARGV[0];

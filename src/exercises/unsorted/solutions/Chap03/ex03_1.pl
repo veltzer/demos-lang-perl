@@ -1,5 +1,8 @@
 # Exercise 3.1 - Select a language in which to be greeted
 
+use strict;
+use warnings;
+
 print("Choose a language:\n\n");
 print(" 1 - English\n");
 print(" 2 - Australian\n");

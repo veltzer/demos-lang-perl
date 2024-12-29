@@ -1,5 +1,8 @@
 # Exercise 14.3
 
+use strict;
+use warnings;
+
 # Process data file using hash references
 
 my(%table);
@@ -9,8 +12,7 @@ while (my($record) = <>) {
 	$table{$acct} = [$name, $ssn, $bal];
 }
 
-my($acctno);
-for $acctno (sort keys(%table)) {
+for my $acctno (sort keys(%table)) {
 	print($acctno, ": ",
 		&getname($acctno, \%table), " ",
 		&getssn( $acctno, \%table), " ",

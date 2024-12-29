@@ -1,5 +1,8 @@
 # Exercise 1.3
 
+use strict;
+use warnings;
+
 # Read address label information from a file
 
 my($last) = <STDIN>;

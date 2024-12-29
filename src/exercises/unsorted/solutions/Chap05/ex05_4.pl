@@ -1,5 +1,8 @@
 # Exercise 5.4
 
+use strict;
+use warnings;
+
 # Reverse Polish Notation calculator
 
 print("RPN Calculator\n");

@@ -1,5 +1,8 @@
 # Exercise 2.2
 
+use strict;
+use warnings;
+
 # Sort two strings
 
 # Get the first string

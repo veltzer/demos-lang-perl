@@ -1,5 +1,8 @@
 # Exercise 14.2
 
+use strict;
+use warnings;
+
 # Multiply two 2x2 arrays together in a subroutine
 
 my($arr1) = [[1, 2], [3, 4]];
@@ -27,9 +30,8 @@ sub mult2x2 {
 
 sub print2x2 {
 	my($arr) = @_;
-	my($i, $j);
-	for $i (0,1) {
-		for $j (0, 1) {
+	for my $i (0,1) {
+		for my $j (0, 1) {
 			printf("%2d ", $arr->[$i][$j]);
 		}
 		print("\n");

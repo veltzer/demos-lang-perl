@@ -1,4 +1,8 @@
 # Exercise 6.2
+
+use strict;
+use warnings;
+
 # Count the number of times each word occurs in a file
 
 # Read the text
@@ -10,13 +14,12 @@ my(@words) = split(/ /, join(" ", @input));
 
 # Count each word
 my(%count);
-my($word);
-foreach $word (@words) {
+foreach my $word (@words) {
 	$count{$word}++;
 }
 
 # Print the list in sorted order
 print "\n";
-foreach $word (sort(keys(%count))) {
+foreach my $word (sort(keys(%count))) {
 	print("$word\t\t$count{$word}\n");
 }

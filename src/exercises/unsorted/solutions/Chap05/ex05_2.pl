@@ -1,5 +1,8 @@
 # Exercise 5.2
 
+use strict;
+use warnings;
+
 # Count the number of digits in a test file
 
 # Read the input
@@ -20,8 +23,7 @@ for (my($i) = 0; $i < 10; $i++) {
 }
 
 # Add 'em up
-my($num);
-foreach $num (@nums) {
+foreach my $num (@nums) {
 	$count[$num]++;
 }
 print "\n";

@@ -1,5 +1,8 @@
 # Exercise 15.3
 
+use strict;
+use warnings;
+
 # Test string.pm
 
 require string;

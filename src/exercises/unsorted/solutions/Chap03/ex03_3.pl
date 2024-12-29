@@ -1,5 +1,8 @@
 # Exercise 3.3
 
+use strict;
+use warnings;
+
 # Generate a Fibonacci series
 
 # Ask the user for a number

@@ -1,4 +1,8 @@
 # Exercise 11.3
+
+use strict;
+use warnings;
+
 # Remove a specified subtree
 
 die("Usage: $0 <dirname>\n") unless (@ARGV > 0);
