@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 die "usage: $0 <file> <position> <length>\n" if (@ARGV != 3);
 
 my($file, $pos, $len) = @ARGV;

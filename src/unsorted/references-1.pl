@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(@a) = (1, 2);
 my(@b) = (3, 4);
 

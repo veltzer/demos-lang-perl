@@ -2,3 +2,7 @@
 
 use strict;
 use warnings;
+
+=pod
+
+=cut

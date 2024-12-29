@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(%users);
 open(my $fh, "<", "/etc/passwd") || die "unable to open /etc/passwd: $!\n";
 while (<$fh>) {

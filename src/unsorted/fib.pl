@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 print "Enter number of elements: ";
 chomp(my($num_els) = <STDIN>);
 

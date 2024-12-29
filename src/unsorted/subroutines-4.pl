@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(@array)=(1,2,3,4);
 
 my(@reversed)=reverse_array(@array);

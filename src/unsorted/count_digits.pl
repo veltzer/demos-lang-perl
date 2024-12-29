@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(@counters);
 for(my($i)=0;$i<256;$i++) {
 	$counters[$i]=0;

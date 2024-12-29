@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 use IO::Socket::INET;
 
 my($server) = IO::Socket::INET->new(LocalPort => "80",

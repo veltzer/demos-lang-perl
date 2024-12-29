@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my($min, $max, $avg) = calc(@ARGV);
 
 print "Min: $min, Max: $max, Avg: $avg\n";

@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 use DBI;
 
 my($dbh)= DBI->connect('DBI:Oracle:payroll')

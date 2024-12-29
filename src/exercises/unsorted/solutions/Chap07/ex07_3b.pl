@@ -5,7 +5,7 @@
 =cut
 
 use strict;
-use diagnostics;
+use warnings;
 
 # Replace a specified record in a data file
 # There are 10 characters per record with no record separators
