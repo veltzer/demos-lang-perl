@@ -6,4 +6,5 @@ packages=[
     "perl-tk",
     "libb-lint-perl",
     "libdbi-perl",
+    "libperl-critic-perl",
 ]
