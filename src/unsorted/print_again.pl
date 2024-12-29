@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 open(my $fh, '<', 'data.txt') || die("bummer!"); 
 
 my($counter)=0;

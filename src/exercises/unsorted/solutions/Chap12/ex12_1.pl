@@ -1,5 +1,8 @@
 # Exercise 12.1
 
+use strict;
+use warnings;
+
 # Parent-child processes
 
 $SIG{"TERM"} = \&TERM_handler; # Register signal handler # Register signal handler

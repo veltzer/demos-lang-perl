@@ -1,8 +1,10 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 my $sum=0;
-my $line;
-while($line=<STDIN>) {
+while(my $line=<STDIN>) {
 	chomp($line);
 	$sum+=$line;
 }

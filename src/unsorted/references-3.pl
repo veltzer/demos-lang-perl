@@ -4,13 +4,13 @@ use strict;
 use warnings;
 
 my(%people);
-open(PASSWD, "/etc/passwd") || die "can't open passwd: $!\n";
-while (<PASSWD>) {
+open($fh, "<", "/etc/passwd") || die "can't open passwd: $!\n";
+while (<$fh>) {
 	chomp;
 	my($login, @data) = split ":";
 	$people{$login} = \@data;
 }
-close PASSWD;
+close $fh;
 
 while (my($login, $datap) = each %people) {
 	print "$login: @$datap\n";
