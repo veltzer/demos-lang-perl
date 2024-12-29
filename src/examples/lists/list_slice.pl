@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-=head
+=pod
 
 This example shows that you can slice a list in perl
 

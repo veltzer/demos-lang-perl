@@ -1,0 +1,7 @@
+multi line comments:
+	=pod
+	...
+	=end
+
+first line:
+	/usr/bin/perl -w
