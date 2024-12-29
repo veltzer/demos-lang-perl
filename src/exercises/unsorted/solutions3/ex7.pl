@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
+
+use strict;
+use warnings;
 
 if ($#ARGV<2) {
 	print "usgae: ex7-1.pl <block-size> <file-name> <record-number> [value-to-insert]\n";

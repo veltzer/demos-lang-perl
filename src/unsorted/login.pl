@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This script prints out a login statement and waits
 for a non empty login and then accepts a name and

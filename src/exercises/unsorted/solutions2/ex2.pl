@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
+
+use strict;
+use warnings;
 
 sub bylastname {
 	my($first1, $last1) = split(", ",$a);

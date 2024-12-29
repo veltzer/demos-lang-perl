@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This script counts number of appearances of the words in STDIN 
 and works in a case insensitive manner.

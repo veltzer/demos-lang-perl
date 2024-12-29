@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 while (<>) {
 	s/\d+/length $&/ge;
