@@ -2,7 +2,7 @@
 
 """
 This is a wrapper for the following make command:
-    $(Q)perl -MO=Lint $<
+    $(Q)perlcritic $<
 
 Why do we need this wrapper?
 - it has bad error codes
@@ -16,8 +16,7 @@ import subprocess
 def main():
     """ main entry point """
     p = subprocess.Popen([
-        "perl",
-        "-MO=Lint",
+        "perlcritic",
         sys.argv[1],
     ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
     errors = False

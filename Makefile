@@ -6,9 +6,11 @@ DO_MKDBG:=0
 # do dependency on the makefile itself?
 DO_ALLDEP:=1
 # do you want to lint perl files?
-DO_LINT:=1
+DO_LINT:=0
 # do you want to comple the perl files?
 DO_COMPILE:=1
+# do you want to use perlcritic?
+DO_CRITIC:=1
 
 ########
 # code #
@@ -17,6 +19,7 @@ ALL:=
 ALL_PL:=$(shell find src -type f -and -name "*.pl")
 ALL_LINT:=$(addprefix out/,$(addsuffix .lint, $(basename $(ALL_PL))))
 ALL_COMPILE:=$(addprefix out/,$(addsuffix .compile, $(basename $(ALL_PL))))
+ALL_CRITIC:=$(addprefix out/,$(addsuffix .critic, $(basename $(ALL_PL))))
 
 ifeq ($(DO_LINT),1)
 ALL+=$(ALL_LINT)
@@ -25,6 +28,10 @@ endif # DO_LINT
 ifeq ($(DO_COMPILE),1)
 ALL+=$(ALL_COMPILE)
 endif # DO_COMPILE
+
+ifeq ($(DO_CRITIC),1)
+ALL+=$(ALL_CRITIC)
+endif # DO_CRITIC
 
 ifeq ($(DO_MKDBG),1)
 Q=
@@ -46,6 +53,7 @@ debug:
 	$(info ALL_PL is $(ALL_PL))
 	$(info ALL_LINT is $(ALL_LINT))
 	$(info ALL_COMPILE is $(ALL_COMPILE))
+	$(info ALL_CRITIC is $(ALL_CRITIC))
 
 .PHONY: check
 check:
@@ -82,6 +90,10 @@ $(ALL_LINT): out/%.lint: %.pl scripts/wrapper_lint.py
 $(ALL_COMPILE): out/%.compile: %.pl scripts/wrapper_compiler.py
 	$(info doing [$@])
 	$(Q)scripts/wrapper_compiler.py $<
+	$(Q)pymakehelper touch_mkdir $@
+$(ALL_CRITIC): out/%.critic: %.pl scripts/wrapper_critic.py
+	$(info doing [$@])
+	$(Q)scripts/wrapper_critic.py $<
 	$(Q)pymakehelper touch_mkdir $@
 
 ##########
