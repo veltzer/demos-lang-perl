@@ -46,6 +46,11 @@ check:
 	@grep -L "=head" -r src/examples
 	@grep -L "=cut" -r src/examples
 
+.PHONY: check_permissions
+check_permissions:
+	@find src -type f -and -name "*.pl" -and -not -perm 755
+	@find src -type f -and -name "*.pm" -and -not -perm 644
+
 .PHONY: clean
 clean:
 	$(Q)rm -f $(ALL)

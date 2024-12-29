@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 Demo of the interaction of signals and the 'sleep' built-in function.
 
