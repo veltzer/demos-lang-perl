@@ -4,4 +4,7 @@ multi line comments:
 	=end
 
 first line:
-	/usr/bin/perl -w
+	#!/usr/bin/perl
+
+	dont add -w since use "use strict" and "use warnings" in the code.
+	and -w will make problems if we want to move to "#!/usr/bin/env perl"

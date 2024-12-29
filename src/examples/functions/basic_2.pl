@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 A simple demo of how to write functions in perl.
 Notice that this function is without a prototype.
