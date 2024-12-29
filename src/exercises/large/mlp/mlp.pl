@@ -1,27 +1,28 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 if ($#ARGV<1) { die "usage: mlp <conf> [file [...]]\n"; }
 
 my $conf = shift(@ARGV);
-open (CONF, "<$conf") || die "cannot open configuration file ($conf): $!\n";
+open my $fh, "<", $conf) || die "cannot open configuration file ($conf): $!\n";
 my(@rules);
-while (<CONF>)
+while (<$fh>)
 {
 	my($p1,$p2,$p3) = $_ =~ /^(\S+)\s+(\S+)\s+(\S+)$/;
 	push(@rules, [$p1, $p2, $p3, 0]);
 	print("\t$p1.$p2");
 }
-close(CONF);
+close($fh);
 print("\t\n");
 
-my($file);
-foreach $file (@ARGV) {
-	open (FILE, "<$file") || die "cannot open input file ($conf): $!\n";
-	while (my($line) = <FILE>)
+foreach my $file (@ARGV) {
+	open ($fh, "<", $file) || die "cannot open input file ($conf): $!\n";
+	while (my($line) = <$fh>)
 	{
 #		print "READ $line";
-		my($rule);
-		foreach $rule (@rules) {		
+		foreach my $rule (@rules) {		
 #			print "MATCHING $rule->[0] $rule->[1] $rule->[2]\n";
 			unless ($rule->[3])
 			{				
@@ -36,10 +37,9 @@ foreach $file (@ARGV) {
 			}
 		}
 	}
-	close(FILE);
+	close($fh);
 	print "$file\t";
-	my($rule);
-	foreach $rule (@rules) {
+	foreach my $rule (@rules) {
 		print "$rule->[4]\t";
 		$rule->[3]=0;
 		$rule->[4]=undef;

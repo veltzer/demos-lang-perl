@@ -1,5 +1,8 @@
 # Exercise 9.1
 
+use strict;
+use warnings;
+
 # Pass a list of numbers into a subroutine
 # Return the largest, smallest, and average values
 
@@ -13,8 +16,7 @@ print("max = $max\nmin = $min\nave = $ave\n");
 sub listproc {
 	my($mx, $mn, $av, $count);
 	$mx = $mn = $_[0];
-	my($item);
-	foreach $item (@_) {
+	foreach my $item (@_) {
 		if ($item > $mx) {
 			$mx = $item;
 		}

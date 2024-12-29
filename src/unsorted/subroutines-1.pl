@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 my($min, $max, $avg) = calc(@ARGV);
 

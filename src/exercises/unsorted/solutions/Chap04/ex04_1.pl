@@ -1,5 +1,8 @@
 # Exercise 4.1
 
+use strict;
+use warnings;
+
 # Convert a floating point string to an integer
 
 # Get floating point value from user

@@ -1,5 +1,8 @@
 # Exercise 4.3
 
+use strict;
+use warnings;
+
 # Print a string in both upper and lower case
 
 print("Enter a string: ");

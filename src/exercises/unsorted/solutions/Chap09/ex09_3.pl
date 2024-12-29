@@ -1,5 +1,8 @@
 # Exercise 9.3
 
+use strict;
+use warnings;
+
 # Demonstrate BEGIN, END, and AUTOLOAD subroutines
 
 &xyz; # Subroutine doesn't exist
