@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This script implements an RPM calculator with a 2 slot stack
 using eval to shorten the code

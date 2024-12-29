@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This is an egrep built in perl using the <> (diamond) operator.
 You can input data either from standard input or any number of

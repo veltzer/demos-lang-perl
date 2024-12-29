@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
+
+use strict;
+use warnings;
 
 my($mat1) = [[1, 2], [3, 4]];
 my($mat2) = [[5, 6], [7, 8]];

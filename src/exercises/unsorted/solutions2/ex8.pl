@@ -1,4 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
+
+use strict;
+use warnings;
 
 my($url);
 $url = "http://www.google.com:80/test/test.html?id=1";
