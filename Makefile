@@ -64,7 +64,7 @@ count:
 ############
 $(ALL_LINT): out/%.lint: %.pl scripts/wrapper_lint.py
 	$(info doing [$@])
-	$(Q)perl -I src/unsorted -I src/examples_standalone/oop_basic -Mstrict -Mdiagnostics -cw $<
+	$(Q)perl -Mstrict -Mdiagnostics -cw $<
 	$(Q)pymakehelper touch_mkdir $@
 # $(Q)scripts/wrapper_lint.py $<
 

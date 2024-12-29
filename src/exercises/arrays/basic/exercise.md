@@ -12,8 +12,10 @@
 		# do something with $line
 	}
 
-	to iterate an array use:
-	my $word;
-	foreach $word (@words) {
-		# do something with $word
-	}
+# to iterate an array use:
+
+```perl
+foreach my $word (@words) {
+	# do something with $word
+}
+```
