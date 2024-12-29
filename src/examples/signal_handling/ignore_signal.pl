@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This is an example of how to ignore a signal in perl.
 Try to press 'CTRL+C' while this is running...

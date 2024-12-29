@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This function prints an array in reverse order.
 Obviously this is not a very efficient solution since
