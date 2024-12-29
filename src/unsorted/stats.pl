@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 Print statistics about an array in a function
 

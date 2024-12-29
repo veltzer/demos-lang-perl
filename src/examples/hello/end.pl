@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-=head
+=pod
 
 This example shows how to use the __END__ constant
 in perl to append junk to your perl file...

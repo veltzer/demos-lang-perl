@@ -10,7 +10,7 @@ use strict;
 use warnings;
 
 my($dir)=".";
-opendir($fd, "<", $dir) || die("error in opendir [$!]");
+opendir(my $fd, $dir) || die("error in opendir [$!]");
 while(my $file=readdir($fd)) {
 	print $file."\n";
 }

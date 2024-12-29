@@ -7,7 +7,7 @@ die "usage: $0 <dir_name>\n" if (@ARGV != 1);
 
 my($dir) = shift;
 
-opendir($fh, "<", $dir) || die "can't open $dir: $!\n";
+opendir(my $fh, $dir) || die "can't open $dir: $!\n";
 while (my($f) = readdir $fh) {
 	print "$f\n" if (substr($f, 0, 1) eq ".");
 }

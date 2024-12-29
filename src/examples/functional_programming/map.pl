@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This example demos the 'map' perl builtin function.
 This function is part of the functional programming support

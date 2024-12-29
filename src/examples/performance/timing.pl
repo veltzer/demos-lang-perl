@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is an example of how to measure the execution time
 of a piece of code in perl. You need to use Time::HiRes

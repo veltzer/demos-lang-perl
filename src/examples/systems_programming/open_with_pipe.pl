@@ -18,9 +18,8 @@ the two pipes involved on our own.
 use strict;
 use warnings;
 
-my $fh;
-open($fh, "|", "ls") || die("unable to open [$!]");
-while($line=<$fh>) {
+open(my $fh, "|", "ls") || die("unable to open [$!]");
+while(my $line=<$fh>) {
 	chomp($line);
 	print "got [$line]\n";
 }

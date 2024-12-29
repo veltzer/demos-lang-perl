@@ -9,7 +9,7 @@ This script trims all lines in files given to it to 5 characters
 use strict;
 use warnings;
 
-=head comment
+=pod
 
 my($line);
 while($line=<>) {

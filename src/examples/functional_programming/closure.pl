@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is an example of a closure in perl.
 Some people do not know that perl supports closures.

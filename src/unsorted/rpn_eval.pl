@@ -14,15 +14,11 @@ my($one,$two);
 while(my $line=<STDIN>) {
 	chomp($line);
 	if($line eq "+" || $line eq "-" || $line eq "*" || $line eq "/") {
-		$one=eval {
-			$one $line $two
-		};
+		$one=eval("$one $line $two");  ## no critic
 		$two=undef;
-	}
-	elsif(defined($one)) {
+	} elsif(defined($one)) {
 		$two=$line;
-	}
-	else {
+	} else {
 		$one=$line;
 	}
 }

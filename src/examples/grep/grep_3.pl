@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-=head
+=pod
 
 This is an egrep(1) implementation in perl using the <> (diamond) operator.
 
