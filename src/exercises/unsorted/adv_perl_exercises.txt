@@ -315,7 +315,3 @@ sub push_button {
         $ent -> insert(0, $calc1*2+$calc2*1.5+$calc3*0.5); 
 				# Write the result. 
 } 
-
-
- 
-

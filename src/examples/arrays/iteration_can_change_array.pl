@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This example shows that $var in an array foreach loop
 is actually an alias to the value in the array and not

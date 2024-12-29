@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This example shows how to access command line arguments from within a perl script.
 The list named '@ARGV' is global and has all the arguments.

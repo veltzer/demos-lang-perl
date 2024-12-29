@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
-=head
+use warnings;
+
+=pod
 
 This is an example of a program which uses undefined
 variables.

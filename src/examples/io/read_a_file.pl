@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
-=head
+use warnings;
+
+=pod
 
 =cut
 

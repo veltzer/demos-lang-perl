@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This example shows single line comments in perl
 Single line comments are lines starting with a '#' sign
