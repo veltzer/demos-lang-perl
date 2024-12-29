@@ -6,7 +6,7 @@ use warnings;
 if ($#ARGV<1) { die "usage: mlp <conf> [file [...]]\n"; }
 
 my $conf = shift(@ARGV);
-open my $fh, "<", $conf) || die "cannot open configuration file ($conf): $!\n";
+open (my $fh, "<", $conf) || die "cannot open configuration file ($conf): $!\n";
 my(@rules);
 while (<$fh>)
 {

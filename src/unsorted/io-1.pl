@@ -6,7 +6,7 @@ use warnings;
 # Without <>
 if (@ARGV > 0) {
 	foreach my $file (@ARGV) {
-		open($fh, "<", $file) || die "can't open $file: $!\n";
+		open(my $fh, "<", $file) || die "can't open $file: $!\n";
 		while (<$fh>) {
 			print length > 5 ? substr($_, 0, 5) . "\n" : $_;
 		}

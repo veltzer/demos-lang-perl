@@ -9,7 +9,7 @@ $ARGV[0] = "." unless (@ARGV); # Current directory is default
 die("$ARGV[0] is not a directory\n") unless (-d $ARGV[0]);
 
 # Open a pipe for input
-open($fh, "|", "ls -a $ARGV[0]");
+open(my $fh, "-|", "ls -a $ARGV[0]");
 
 # Read the list of files and list permissions for the process owner
 while (my($file) = <$fh>) {
