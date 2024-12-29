@@ -1,5 +1,7 @@
 package rectangle2;
+
 use strict;
+use warnings;
 
 =pod
 

@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my($line) = <STDIN>;
 chomp $line;
 

@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 # Without <>
 if (@ARGV > 0) {
 	foreach my $file (@ARGV) {

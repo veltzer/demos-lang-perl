@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 die "usage: $0 <dir_name>\n" if (@ARGV != 1);
 
 my($dir) = shift;

@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 open(my $fh, '<', 'data.txt') || die("bummer!"); 
 
 my($counter)=0;

@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my($mat1) = [[1, 2], [3, 4]];
 my($mat2) = [[5, 6], [7, 8]];
 

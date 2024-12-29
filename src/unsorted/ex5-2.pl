@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(@counters, $i);
 $counters[$i++] = 0 while ($i < 10);
 

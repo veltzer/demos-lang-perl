@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my($matrix) = [[1, 2], [4, 5]];
 
 my(%people);

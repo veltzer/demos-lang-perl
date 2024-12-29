@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my(%people);
 while (<STDIN>) {
 	chomp;
