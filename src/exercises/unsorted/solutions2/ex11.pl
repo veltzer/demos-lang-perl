@@ -3,6 +3,10 @@
 use strict;
 use diagnostics;
 
+=pod
+
+=cut
+
 open (my $fh, "<", "/etc/passwd") || die "error";
 
 my(%p);

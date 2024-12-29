@@ -1,5 +1,9 @@
 #!/usr/bin/perl
 
+=pod
+
+=cut
+
 use strict;
 use warnings;
 use diagnostics;

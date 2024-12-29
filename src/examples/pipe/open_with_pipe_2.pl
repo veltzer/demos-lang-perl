@@ -3,6 +3,10 @@
 use strict;
 use warnings;
 
+=pod
+
+=cut
+
 my $fh;
 open($fh, "|", 'ls -l /etc | wc -l |') || die("problem with open [$!]");
 

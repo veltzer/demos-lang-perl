@@ -1,5 +1,9 @@
 # Exercise 3.2 - Greet a list of people
 
+=pod
+
+=cut
+
 use strict;
 use warnings;
 

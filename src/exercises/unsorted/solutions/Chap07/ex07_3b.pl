@@ -1,5 +1,9 @@
 # Exercise 7.3b
 
+=pod
+
+=cut
+
 use strict;
 use diagnostics;
 

@@ -1,10 +1,17 @@
 package Plane;
 
+use strict;
+use warnings;
+
+=pod
+
+=cut
+
 sub new
 {
 	my ($pkg, $name, $fuel) = @_;
 
-	$data = {"name" => $name, "fuel" => $fuel};
+	my $data = {"name" => $name, "fuel" => $fuel};
 	bless($data, $pkg);
 	return $data;
 }

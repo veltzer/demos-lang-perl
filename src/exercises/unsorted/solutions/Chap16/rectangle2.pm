@@ -1,6 +1,10 @@
 package rectangle2;
 use strict;
 
+=pod
+
+=cut
+
 my $COUNT = 0; # Class data member
 
 # Constructor

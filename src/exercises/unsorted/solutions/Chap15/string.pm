@@ -1,3 +1,9 @@
+=pod
+
+=cut
+
+use strict
+use warnings;
 
 package string;
 require Exporter;

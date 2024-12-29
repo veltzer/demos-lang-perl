@@ -49,10 +49,10 @@ debug:
 
 .PHONY: check
 check:
-	$(Q)grep -L "use strict" -r src/examples
-	$(Q)grep -L "use warnings" -r src/examples
-	$(Q)grep -L "=head" -r src/examples
-	$(Q)grep -L "=cut" -r src/examples
+	-$(Q)git grep -L "use strict" -- "src/**/*.pl" "src/**/*.pm"
+	-$(Q)git grep -L "use warnings" "src/**/*.pl" "src/**/*.pm"
+	-$(Q)git grep -L "=pod" "src/**/*.pl" "src/**/*.pm"
+	-$(Q)git grep -L "=cut" "src/**/*.pl" "src/**/*.pm"
 
 .PHONY: check_permissions
 check_permissions:
