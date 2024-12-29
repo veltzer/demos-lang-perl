@@ -9,7 +9,7 @@ use warnings;
 (@ARGV == 2) || die("Usage: $0 recno filename\n");
 
 # Open the file
-open($fh, "<", $ARGV[1]) || die ("Unable to open $ARGV[1]: ");
+open(my $fh, "<", $ARGV[1]) || die ("Unable to open $ARGV[1]: ");
 
 # Seek to the beginning of the record
 seek($fh, 10*($ARGV[0] - 1), 0) ||

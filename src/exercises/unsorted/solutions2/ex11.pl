@@ -3,7 +3,7 @@
 use strict;
 use diagnostics;
 
-open ($fh, "<", "/etc/passwd") || die "error";
+open (my $fh, "<", "/etc/passwd") || die "error";
 
 my(%p);
 while(<$fh>) {

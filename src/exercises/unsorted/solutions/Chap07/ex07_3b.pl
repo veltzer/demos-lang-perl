@@ -9,7 +9,7 @@ use diagnostics;
 (@ARGV == 3) || die("Usage: $0 recno record filename\n");
 
 # Open the file
-open($fh, "+<", $ARGV[2]) || die("Cannot open file $ARGV[2]\n");
+open(my $fh, "+<", $ARGV[2]) || die("Cannot open file $ARGV[2]\n");
 
 # Seek to the beginning of the record
 seek($fh, 10*($ARGV[0] - 1), 0) ||

@@ -1,10 +1,10 @@
 #!/usr/bin/perl 
 
 use strict;
-use warninigs;
+use warnings;
 
 my(%users);
-open($fh, "<", "/etc/passwd") || die "unable to open /etc/passwd: $!\n";
+open(my $fh, "<", "/etc/passwd") || die "unable to open /etc/passwd: $!\n";
 while (<$fh>) {
 	chomp;
 	my ($user, @data) = split(":");

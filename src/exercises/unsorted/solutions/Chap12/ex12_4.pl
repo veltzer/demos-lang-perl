@@ -9,7 +9,7 @@ use warnings;
 $ARGV[0] = "." if (@ARGV == 0);
 
 # Open the directory
-die("Can't open directory $ARGV[0]\n") unless opendir($fh, $ARGV[0]);
+die("Can't open directory $ARGV[0]\n") unless opendir(my $fh, $ARGV[0]);
 
 # Read the list of files
 while (my($file) = readdir($fh)) {

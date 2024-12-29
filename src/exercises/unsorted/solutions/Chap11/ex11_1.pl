@@ -7,7 +7,7 @@ use warnings;
 
 $ARGV[0] = "." if (@ARGV == 0);
 
-die("Can't open directory\n") unless opendir($fh, $ARGV[0]);
+die("Can't open directory\n") unless opendir(my $fh, $ARGV[0]);
 
 while (my($file) = readdir($fh)) {
 	unless (-d $file) {

@@ -21,7 +21,7 @@ while($line=<>) {
 
 if(@ARGV>0) {
 	foreach my $file (@ARGV) {
-		open($fh, "<", $file) || die("huh!?!");
+		open(my $fh, "<", $file) || die("huh!?!");
 		while(my $line=<$fh>) {
 			chomp($line);
 			print substr($line,0,5)."\n";

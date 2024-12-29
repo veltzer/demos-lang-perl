@@ -4,7 +4,7 @@ use strict;
 use warnings;
 
 my(%people);
-open($fh, "<", "/etc/passwd") || die "can't open passwd: $!\n";
+open(my $fh, "<", "/etc/passwd") || die "can't open passwd: $!\n";
 while (<$fh>) {
 	chomp;
 	my($login, @data) = split ":";
