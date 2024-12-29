@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
 # this is not exacltly the answer to the exercise in the slides
 # as it reverses a string and not the array sent to it

@@ -1,5 +1,8 @@
 # Exercise 4.2
 
+use strict;
+use warnings;
+
 # Convert an octal number to a decimal number
 
 print("Enter a number in octal notation: ");

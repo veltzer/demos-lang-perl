@@ -1,5 +1,8 @@
 # Exercise 2.1
 
+use strict;
+use warnings;
+
 # Temperature conversion
 
 # Get the temperature from the user

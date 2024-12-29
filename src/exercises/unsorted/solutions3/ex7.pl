@@ -17,17 +17,18 @@ if (defined($value)) {
 		exit;
 	}
 	print "writing $value to $filename record $record\n";
-	open(FILE, ">>$filename") || die "can not open file $filename: $!\n";
-	seek(FILE, $loc, 0) || die "can not seek file $filename to $loc: $!\n";
-	print tell(FILE)." $loc";
-	print("a"x($loc-tell(FILE))) if (tell(FILE)<$loc);
-	print(FILE $value);
+	open($fh, ">>", $filename) || die "can not open file $filename: $!\n";
+	seek($fh, $loc, 0) || die "can not seek file $filename to $loc: $!\n";
+	print tell($fh)." $loc";
+	print("a"x($loc-tell($fh)) if (tell($fh)<$loc);
+	print($fh $value);
+	close($fh);
 } else {
 	print "reading record $record from $filename\n";
-	open(FILE, "<$filename") || die "can not open file $filename: $!\n";
-	seek(FILE, $loc, 0) || die "can not seek file $filename to $loc: $!\n";
-	read(FILE, $value, $size)==$size || die "can not read";
+	open($fh, "<", $filename) || die "can not open file $filename: $!\n";
+	seek($fh, $loc, 0) || die "can not seek file $filename to $loc: $!\n";
+	read($fh, $value, $size)==$size || die "can not read";
 	print "DATA:".$value."\n";
+	close($fh);
 }
 
-close FILE;

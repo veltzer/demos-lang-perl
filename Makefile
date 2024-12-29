@@ -6,7 +6,7 @@ DO_MKDBG:=0
 # do dependency on the makefile itself?
 DO_ALLDEP:=1
 # do you want to lint perl files?
-DO_LINT:=0
+DO_LINT:=1
 # do you want to comple the perl files?
 DO_COMPILE:=1
 

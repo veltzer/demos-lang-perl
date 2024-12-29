@@ -3,20 +3,18 @@
 use strict;
 use diagnostics;
 
-open (IN, "</etc/passwd") || die "error";
+open ($fh, "<", "/etc/passwd") || die "error";
 
 my(%p);
-while(<IN>) {
+while(<$fh>) {
 	my(@line) = split(":");
 	my($login) = shift @line;
 	$p{$login} = \@line;
 }
-
-close (IN);
+close ($fh);
 
 #print %p;
-my($login);
-foreach $login (keys %p) {
+foreach my $login (keys %p) {
 	my(@l) = @{$p{$login}};
 	print "$login\t@l\n";
 }

@@ -4,14 +4,15 @@ use strict;
 use warnings;
 
 my(%hash);
-open PW,"< /etc/passwd";
-while (<PW>) {
+open $fh,"<", "/etc/passwd";
+while (<$fh>) {
 	chop;
 	my(@vals) = split(":");
 	print "@vals\n";
 	my($key) = shift(@vals);
 	$hash{$key}=\@vals;
 }
+close($fh)
 
 foreach (keys(%hash)) {
 	print "$_ -> @{$hash{$_}}\n";

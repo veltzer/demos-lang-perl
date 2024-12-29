@@ -16,7 +16,7 @@ while(($key, $value)=each(%dict)) {
 print ('-' x 40);
 print "\n";
 
-=head
+=pod
 my %revdict=reverse @lines;
 
 while(($key, $value)=each(%revdict)) {
@@ -30,7 +30,7 @@ while(($key, $value)=each(%dict)) {
 	$revdict{$value}=$key;
 }
 
-sub print_dict(%) {
+sub print_dict() {
 	while(($key, $value)=each(%revdict)) {
 		print "key is $key\n";
 		print "value is $value\n";

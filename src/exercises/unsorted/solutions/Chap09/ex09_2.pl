@@ -1,5 +1,8 @@
 # Exercise 9.2
 
+use strict;
+use warnings;
+
 # Recursive subroutine to print a string in reverse order
 
 print("$ARGV[0]\n");
