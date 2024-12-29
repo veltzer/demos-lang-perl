@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This examples explores the uc,lc,ucfirst,lcfirst functions.
 
