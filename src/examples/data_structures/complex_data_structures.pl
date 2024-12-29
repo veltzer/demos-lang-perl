@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This is an example of creating a complex data structure in perl
 

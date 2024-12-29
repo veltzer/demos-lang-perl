@@ -1,8 +1,9 @@
 #!/usr/bin/perl
 
+use warnings;
+
 my $lines=0;
-my $line;
-while($line=<>) {
+while(my $line=<>) {
 	$lines++;
 }
 print "$lines\n";

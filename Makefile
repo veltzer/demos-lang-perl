@@ -62,10 +62,11 @@ count:
 ############
 # patterns #
 ############
-$(ALL_LINT): out/%.lint: %.pl scripts/wrapper_lint.py
+$(ALL_LINT): out/%.lint: %.pl scripts/wrapper_compiler.py
 	$(info doing [$@])
-	$(Q)perl -Mstrict -Mdiagnostics -cw $<
+	$(Q)scripts/wrapper_compiler.py $<
 	$(Q)pymakehelper touch_mkdir $@
+#perl -Mstrict -Mdiagnostics -cw $<
 # $(Q)scripts/wrapper_lint.py $<
 
 ##########

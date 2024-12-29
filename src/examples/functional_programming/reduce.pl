@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-=head
+=pod
 
 This is an example of doing functional style reduce using perl.
 Notice that unlike the 'map' function the 'reduce' function is not

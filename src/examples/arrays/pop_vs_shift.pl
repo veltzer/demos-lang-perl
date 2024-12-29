@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head
+=pod
 
 This script aims to test whether there is a significant
 difference in performance in perl between pop and shift

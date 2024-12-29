@@ -1,6 +1,6 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl
 
-=head comment
+=pod
 
 This example shows multi line comments in perl.
 This is also the actual multi-line comment...:)
