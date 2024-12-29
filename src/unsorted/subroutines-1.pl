@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 my($min, $max, $avg) = calc(@ARGV);
 
 print "Min: $min, Max: $max, Avg: $avg\n";

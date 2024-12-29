@@ -11,11 +11,12 @@ use strict;
 use warnings;
 
 my($one,$two);
-my($line);
-while($line=<STDIN>) {
+while(my $line=<STDIN>) {
 	chomp($line);
 	if($line eq "+" || $line eq "-" || $line eq "*" || $line eq "/") {
-		$one=eval("$one $line $two");
+		$one=eval {
+			$one $line $two
+		};
 		$two=undef;
 	}
 	elsif(defined($one)) {

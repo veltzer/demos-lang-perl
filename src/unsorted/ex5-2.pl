@@ -1,12 +1,14 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 my(@counters, $i);
 $counters[$i++] = 0 while ($i < 10);
 
 while (my($line) = <STDIN>) {
 	chomp $line;
-	my($digit);
-	foreach $digit (split("", $line)) {
+	foreach my $digit (split("", $line)) {
 		$counters[$digit]++;
 	}
 }

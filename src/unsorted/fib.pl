@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 print "Enter number of elements: ";
 chomp(my($num_els) = <STDIN>);
 

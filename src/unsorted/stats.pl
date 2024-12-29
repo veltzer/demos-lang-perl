@@ -13,8 +13,7 @@ sub stats {
 	my($sum)=0;
 	my($smallest)=$_[0];
 	my($biggest)=$_[0];
-	my($number);
-	foreach $number (@_) {
+	foreach my $number (@_) {
 		$sum+=$number;
 		if($number<$smallest) {
 			$smallest=$number;

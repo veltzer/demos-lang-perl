@@ -1,8 +1,15 @@
 #!/usr/bin/perl
 
-# this is not exacltly the answer to the exercise in the slides
-# as it reverses a string and not the array sent to it
-# see the next answer for that
+use strict;
+use warnings;
+
+=pod
+
+this is not exacltly the answer to the exercise in the slides
+as it reverses a string and not the array sent to it
+see the next answer for that
+
+=cut
 
 my($str) = shift;
 

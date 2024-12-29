@@ -1,5 +1,8 @@
 #!/usr/bin/perl
 
+use strict;
+use warnings;
+
 my($matrix) = [[1, 2], [4, 5]];
 
 my(%people);
