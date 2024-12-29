@@ -1,9 +1,11 @@
 # Exercise 3.2 - Greet a list of people
 
+use strict;
+use warnings;
+
 # Use a ":" as a name and language code separator
 
-my($name);
-foreach $name ("John:1", "Duncan:2", "Hector:3", "Rene:4", "Nobody:5") {
+foreach my $name ("John:1", "Duncan:2", "Hector:3", "Rene:4", "Nobody:5") {
 
 	# Get the language code
 	my($code) = chop($name);

@@ -1,5 +1,8 @@
 # Exercise 5.1
 
+use strict;
+use warnings;
+
 # Print out a file in upper or lower case
 
 # Get the input
@@ -11,15 +14,13 @@ if (@ARGV == 0) {
 }
 elsif ($ARGV[0] eq "-l") {
 	print("found -l\n");
-	my($line);
-	foreach $line (@file) {
+	foreach my $line (@file) {
 		print("\L$line\E");
 	}
 }
 elsif ($ARGV[0] eq "-u") {
 	print("found -u\n");
-	my($line);
-	foreach $line (@file) {
+	foreach my $line (@file) {
 		print("\U$line\E");
 	}
 }

@@ -1,5 +1,8 @@
 # Exercise 5.3
 
+use strict;
+use warnings;
+
 # List words in alphabetical order
 
 my(@file) = <STDIN>;

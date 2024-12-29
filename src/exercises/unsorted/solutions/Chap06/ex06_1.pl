@@ -1,5 +1,8 @@
 # Exercise 6.1
 
+use strict;
+use warnings;
+
 # Phone directory
 
 # Load the directory from standard input
@@ -9,7 +12,6 @@ chomp(@input);
 # Create the directory as a hash
 my(%phone) = split(/,/, join(",", @input));
 
-my($name);
-foreach $name (sort(keys(%phone))) {
+foreach my $name (sort(keys(%phone))) {
 	print("$name\t$phone{$name}\n");
 }

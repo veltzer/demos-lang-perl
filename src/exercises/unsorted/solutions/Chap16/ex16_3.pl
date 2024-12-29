@@ -1,5 +1,8 @@
 # Exercise 16.3
 
+use strict;
+use warnings;
+
 # Test program for class box
 
 require box;

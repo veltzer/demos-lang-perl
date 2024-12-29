@@ -1,15 +1,18 @@
 # Exercise 7.3b
 
+use strict;
+use diagnostics;
+
 # Replace a specified record in a data file
 # There are 10 characters per record with no record separators
 
 (@ARGV == 3) || die("Usage: $0 recno record filename\n");
 
 # Open the file
-open(CHGFILE, "+<$ARGV[2]") || die("Cannot open file $ARGV[2]\n");
+open($fh, "+<", $ARGV[2]) || die("Cannot open file $ARGV[2]\n");
 
 # Seek to the beginning of the record
-seek(CHGFILE, 10*($ARGV[0] - 1), 0) ||
+seek($fh, 10*($ARGV[0] - 1), 0) ||
 	die("Unable to seek to record $ARGV[0]\n");
 
 # Make sure the record is no longer than 10 characters
@@ -22,4 +25,4 @@ while (@record < 10) {
 my($record) = join("", @record[0..9]);
 
 # Replace the record
-print CHGFILE ($record);
+print $fh ($record);

@@ -1,5 +1,8 @@
 # Exercise 2.3
 
+use strict;
+use warnings;
+
 # Print a number in binary notation
 
 # Get a number from the user

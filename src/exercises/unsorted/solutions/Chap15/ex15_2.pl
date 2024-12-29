@@ -1,5 +1,8 @@
 # Exercise 15.2
 
+use strict;
+use warnings;
+
 # Perform arithmetic operations using the integer package
 
 my($x) = 7.83;

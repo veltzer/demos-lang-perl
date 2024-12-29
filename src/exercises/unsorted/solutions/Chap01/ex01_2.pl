@@ -1,5 +1,8 @@
 # Exercise 1.2
 
+use strict;
+use warnings;
+
 # Prompt for information, then print mailing label
 
 print("Name: ");

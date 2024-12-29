@@ -1,4 +1,8 @@
 # Exercise 11.2
+
+use strict;
+use warnings;
+
 # Print a subtree listing
 
 $ARGV[0] = "." unless (@ARGV > 0);

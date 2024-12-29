@@ -1,5 +1,8 @@
 # Exercise 8.3
 
+use strict;
+use warnings;
+
 # Strip numbers from a file and count the number of times each digit occurs
 
 my(@file) = <>;
@@ -9,8 +12,7 @@ $string =~ tr/0-9//cd;
 my(@nums) = split(//, $string);
 
 my(@count);
-my($num);
-foreach $num (@nums) {
+foreach my $num (@nums) {
 	$count[$num]++;
 }
 

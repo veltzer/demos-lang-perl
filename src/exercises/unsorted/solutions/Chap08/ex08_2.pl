@@ -1,5 +1,8 @@
 # Exercise 8.2
 
+use strict;
+use warnings;
+
 # List the line numbers and positions in which a word occurs in a file or
 # list of files
 

@@ -1,5 +1,8 @@
 # Exercise 14.1
 
+use strict;
+use warnings;
+
 # Use references to swap two scalars in a subroutine
 
 my($x) = 5;

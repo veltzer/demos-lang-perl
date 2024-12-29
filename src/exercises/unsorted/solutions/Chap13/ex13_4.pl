@@ -1,4 +1,8 @@
 # Exercise 13.4
+
+use strict;
+use warnings;
+
 # Print date and time, based on -d and -t options
 
 # NOTE: This program requires that Perl be called with the -s option.
