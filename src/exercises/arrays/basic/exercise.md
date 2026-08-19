@@ -1,18 +1,26 @@
+# Arrays: basics
+
 - input a list of numeric values.
-	print the mean, median, variance of the values.
-	all input is from STDIN.
-	each number is floating point on it's own line.
+  print the mean, median, variance of the values.
+  all input is from STDIN.
+  each number is floating point on it's own line.
 
-	read all input into an array:
-	my @lines=<STDIN>;
+Read all input into an array:
 
-	or one by one:
-	my $line;
-	while($line=<STDIN>) {
-		# do something with $line
-	}
+```perl
+my @lines=<STDIN>;
+```
 
-# to iterate an array use:
+Or one by one:
+
+```perl
+my $line;
+while($line=<STDIN>) {
+    # do something with $line
+}
+```
+
+## To iterate an array use
 
 ```perl
 foreach my $word (@words) {
