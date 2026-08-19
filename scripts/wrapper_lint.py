@@ -10,33 +10,13 @@ Why do we need this wrapper?
 """
 
 import sys
-import subprocess
+
+from wrapper_common import run_filtered
 
 
 def main():
     """ main entry point """
-    p = subprocess.Popen([
-        "perl",
-        "-MO=Lint",
-        sys.argv[1],
-    ], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
-    errors = False
-    for line in p.stdout:
-        line = line.decode().rstrip()
-        if line==f"{sys.argv[1]} source OK":
-            continue
-        # this is a warning or error
-        errors = True
-        print(f"stdout line is [{line}]")
-    for line in p.stderr:
-        line = line.decode().rstrip()
-        if line==f"{sys.argv[1]} syntax OK":
-            continue
-        # this is a warning or error
-        errors = True
-        print(f"stderr line is [{line}]")
-    if errors:
-        sys.exit(1)
+    run_filtered(["perl", "-MO=Lint", sys.argv[1]], sys.argv[1], prefix_streams=True)
 
 
 if __name__ == "__main__":

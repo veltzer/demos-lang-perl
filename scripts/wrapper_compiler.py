@@ -9,14 +9,15 @@ Why do we need this wrapper?
 - it prints too much to the screen.
 """
 
-import sys
-import subprocess
 import os.path
+import sys
+
+from wrapper_common import run_filtered
 
 
 def main():
     """ main entry point """
-    args = [
+    run_filtered([
         "perl",
         "-Mstrict",
         "-Mdiagnostics",
@@ -24,26 +25,7 @@ def main():
         "-I",
         os.path.dirname(sys.argv[1]),
         sys.argv[1],
-    ]
-    # print(args)
-    p = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False)
-    errors = False
-    for line in p.stdout:
-        line = line.decode().rstrip()
-        if line==f"{sys.argv[1]} source OK":
-            continue
-        # this is a warning or error
-        errors = True
-        print(f"{line}")
-    for line in p.stderr:
-        line = line.decode().rstrip()
-        if line==f"{sys.argv[1]} syntax OK":
-            continue
-        # this is a warning or error
-        errors = True
-        print(f"{line}")
-    if errors:
-        sys.exit(1)
+    ], sys.argv[1], prefix_streams=False)
 
 
 if __name__ == "__main__":
