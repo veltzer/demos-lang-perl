@@ -63,18 +63,6 @@ src_dirs = ["config"]
 [processor.taplo]
 src_dirs = ["."]
 
-[processor.htmlhint]
-src_dirs = ["src"]
-
-[processor.tidy]
-src_dirs = ["src"]
-
-[processor.eslint]
-src_dirs = ["config"]
-args = ["-c", "config/eslint.config.js"]
-
-# ─── merged from rsconstruct.local.toml ─────────────────────────────────────
-
 # The Makefile's active check was perlcritic on each src/**/*.pl (DO_CRITIC:=1;
 # DO_LINT and DO_COMPILE were off). rsconstruct's perlcritic processor does
 # exactly that; point it at src.
