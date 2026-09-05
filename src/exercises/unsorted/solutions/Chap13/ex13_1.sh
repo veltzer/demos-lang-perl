@@ -7,5 +7,5 @@ perl -n -e 'BEGIN { $pattern = shift @ARGV; }
 	print if (/$pattern/);' pattern filelist
 
 # On a Windows system:
-perl -n -e "BEGIN { $pattern = shift @ARGV; }
-	print if (/$pattern/);" pattern filelist
+perl -n -e "BEGIN { \$pattern = shift @ARGV; }
+	print if (/\$pattern/);" pattern filelist

@@ -26,6 +26,7 @@ src_dirs = ["tera.templates"]
 
 [processor.rumdl]
 src_dirs = ["src"]
+src_files = ["README.md"]
 
 [processor.zspell]
 src_dirs = ["src"]
@@ -45,7 +46,6 @@ src_dirs = ["src", "scripts", "config"]
 
 [processor.shellcheck]
 src_dirs = ["scripts", "src", "config"]
-args = ["--severity=error", "--shell=bash"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
 
