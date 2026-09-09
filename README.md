@@ -1,11 +1,11 @@
 <!-- This file is generated. Do not edit it by hand: your changes will be
      lost on the next build. Edit the template it is rendered from, or the
      values that template reads, and build again. -->
-# *demos-perl* project by Mark Veltzer
+# *demos-lang-perl* project by Mark Veltzer
 
 description: Demos for the Perl programming language
 
-project website: https://veltzer.github.io/demos-perl
+project website: https://veltzer.github.io/demos-lang-perl
 
 author: Mark Veltzer
 
@@ -15,11 +15,11 @@ version: 0.0.1
 
 ## github
 
-![License](https://img.shields.io/github/license/veltzer/demos-perl)
+![License](https://img.shields.io/github/license/veltzer/demos-lang-perl)
 
 ## build
 
-![build](https://github.com/veltzer/demos-perl/workflows/build/badge.svg)
+![build](https://github.com/veltzer/demos-lang-perl/workflows/build/badge.svg)
 ## Number of examples
 
 Currently there are 235 examples in this repo.
