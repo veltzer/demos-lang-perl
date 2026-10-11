@@ -46,7 +46,7 @@ src_dirs = ["src", "scripts", "config"]
 
 # ─── shell ───────────────────────────────────────────────────────────────────
 
-[processor.checker.shellcheck]
+[processor.checker.ishellcheck]
 src_dirs = ["scripts", "src", "config"]
 
 # ─── lua ─────────────────────────────────────────────────────────────────────
@@ -60,17 +60,11 @@ src_dirs = ["config"]
 src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
 # The Makefile's active check was perlcritic on each src/**/*.pl (DO_CRITIC:=1;
-# DO_LINT and DO_COMPILE were off). rsconstruct's perlcritic processor does
-# exactly that; point it at src.
-[processor.checker.perlcritic]
+# DO_LINT and DO_COMPILE were off). rsconstruct's iperlcritic processor does
+# exactly that, in-process; point it at src.
+[processor.checker.iperlcritic]
 src_dirs = ["src"]
 src_extensions = [".pl"]
-
-# perlcritic (Perl::Critic) checks the demos.
-[dependencies]
-system = [
-    "libperl-critic-perl",
-]
 
 # lint the GitHub Actions workflow files with actionlint
 [processor.checker.iactionlint]
