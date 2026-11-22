@@ -5,7 +5,7 @@
 
 description: Demos for the Perl programming language
 
-project website: https://veltzer.github.io/demos-lang-perl
+project website: <https://veltzer.github.io/demos-lang-perl>
 
 author: Mark Veltzer
 
