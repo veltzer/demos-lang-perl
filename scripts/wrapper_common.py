@@ -16,7 +16,8 @@ def run_filtered(args: list[str], target: str, prefix_streams: bool) -> None:
         args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False,
     ) as p:
         errors = False
-        assert p.stdout is not None and p.stderr is not None
+        assert p.stdout is not None
+        assert p.stderr is not None
         for name, stream in (("stdout", p.stdout), ("stderr", p.stderr)):
             for raw in stream:
                 line = raw.decode().rstrip()
