@@ -10,7 +10,7 @@ import subprocess
 import sys
 
 
-def run_filtered(args: list[str], target: str, prefix_streams: bool) -> None:
+def run_filtered(args: list[str], target: str, *, prefix_streams: bool) -> None:
     """Run args, filter the OK lines for target, exit 1 on any other output."""
     with subprocess.Popen(
         args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=False,
