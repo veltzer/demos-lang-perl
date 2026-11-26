@@ -48,7 +48,7 @@ src_dirs = ["config"]
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
 [processor.checker.taplo]
-src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
+src_files = [".ruff.toml", ".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
 # The Makefile's active check was perlcritic on each src/**/*.pl (DO_CRITIC:=1;
 # DO_LINT and DO_COMPILE were off). rsconstruct's iperlcritic processor does
