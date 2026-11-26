@@ -27,7 +27,8 @@ sub add3 {
 	return $a+$b;
 }
 
-sub add4($$) {  ## no critic
+# teaching: the prototype is one of the weird things this file shows
+sub add4($$) {  ## no critic (Subroutines::ProhibitSubroutinePrototypes)
 	my ($a, $b)=@_;
 	return $a+$b;
 }
@@ -55,7 +56,8 @@ sub what_does_this_return {
 	if ($a%2 == 0) {
 		return "hello";
 	}
-	return undef; ## no critic
+	# teaching: an explicit "return undef" is one of the weird things this file shows
+	return undef; ## no critic (Subroutines::ProhibitExplicitReturnUndef)
 }
 
 my $a = 2;

@@ -14,7 +14,8 @@ my($one,$two);
 while(my $line=<STDIN>) {
 	chomp($line);
 	if($line eq "+" || $line eq "-" || $line eq "*" || $line eq "/") {
-		$one=eval("$one $line $two");  ## no critic
+		# teaching: the calculator applies the operator by evaluating a string
+		$one=eval("$one $line $two");  ## no critic (BuiltinFunctions::ProhibitStringyEval)
 		$two=undef;
 	} elsif(defined($one)) {
 		$two=$line;

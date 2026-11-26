@@ -11,5 +11,6 @@ use strict;
 use warnings;
 
 while (<>) {
-	print eval."\n";  ## no critic
+	# teaching: evaluating each input line is the whole of this toy shell
+	print eval."\n";  ## no critic (BuiltinFunctions::ProhibitStringyEval)
 }
